@@ -46,17 +46,15 @@ footer{
 }
 
 
-h1, .typing {
+h1, .typing  {
     display: inline-block; /* Esto permite que se alineen horizontalmente */
 }
 
-/* Estilo común para ambos elementos para asegurar el mismo tamaño de fuente */
 h1, .typing {
     font-size: 2rem; /* Ajusta este tamaño según tus necesidades */
     margin: 0; /* Elimina cualquier margen por defecto */
 }
 
-/* Opcional: si deseas un espacio entre los elementos */
 h1 {
     margin-right: 8px; /* Espacio entre el h1 y el span */
 }
