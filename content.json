@@ -5,7 +5,7 @@
         "nav-lenguajes": "Languages",
         "nav-projects": "Projects",
         "nav-contact": "Contact",
-        "holatxt": "Hello, My name is",
+        "holatxt": "Hello, My name is Jofiel Ontiveros",
         "im-txt": "I'm",
         "frontend-txt": "Experienced front-end Developer with 2+ years of expertise in Html, CSS, JS, PHP, SQL, and other technologies."
     },
@@ -15,8 +15,8 @@
         "nav-lenguajes": "Tecnologías",
         "nav-projects": "Proyectos",
         "nav-contact": "Contacto",
-        "holatxt": "Hola, mi nombre es",
+        "holatxt": "Hola, mi nombre es Jofiel Ontiveros",
         "im-txt": "Soy",
         "frontend-txt": "Desarrollador front-end con más de 2 años de experiencia en HTML, CSS, JS, PHP, SQL y otras tecnologías."
-      }
+    }
 }
