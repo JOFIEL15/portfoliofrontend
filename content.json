@@ -1,0 +1,22 @@
+{
+    "en": {
+        "nav-start": "Start",
+        "nav-about": "About",
+        "nav-lenguajes": "Languages",
+        "nav-projects": "Projects",
+        "nav-contact": "Contact",
+        "holatxt": "Hello, My name is",
+        "im-txt": "I'm",
+        "frontend-txt": "Experienced front-end Developer with 2+ years of expertise in Html, CSS, JS, PHP, SQL, and other technologies."
+    },
+    "es": {
+        "nav-start": "Inicio",
+        "nav-about": "Sobre mí",
+        "nav-lenguajes": "Tecnologías",
+        "nav-projects": "Proyectos",
+        "nav-contact": "Contacto",
+        "holatxt": "Hola, mi nombre es",
+        "im-txt": "Soy",
+        "frontend-txt": "Desarrollador front-end con más de 2 años de experiencia en HTML, CSS, JS, PHP, SQL y otras tecnologías."
+    }
+}
