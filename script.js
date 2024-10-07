@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const holaElement = document.getElementById('hola-txt');
     const imElement = document.getElementById('im-txt');
     const frontendElement = document.getElementById('frontend-txt');
-    const typingElement = document.querySelector('.typing');
     const toggleBtn = document.getElementById('toggle-btn');
 
     // Cargar idioma desde localStorage si está disponible, por defecto 'en'
@@ -34,27 +33,19 @@ document.addEventListener('DOMContentLoaded', function () {
                 holaElement.textContent = data[language]['holatxt'];
                 imElement.textContent = data[language]['im-txt'];
                 frontendElement.textContent = data[language]['frontend-txt'];
-
-                // Inicializar Typed.js con las cadenas del archivo JSON
-                // Limpiar el elemento de typing antes de crear una nueva instancia
-                typingElement.innerHTML = ''; 
-                new Typed(typingElement, {
-                    strings: data[language]['typing'],
-                    typeSpeed: 100,
-                    backSpeed: 60,
-                    loop: true
-                });
             })
-            .catch(error => {
-                console.error('Error al cargar el contenido:', error);
-            });
-    };
-
+            .catch(error=>console.log(error));
+        };
+    
     // Evento de cambio en el botón de alternancia
     toggleBtn.addEventListener('change', () => {
-        currentLanguage = toggleBtn.checked ? 'es' : 'en';
-        localStorage.setItem('language', currentLanguage);
-        loadContent(currentLanguage); // Cargar contenido del nuevo idioma
+    if(toggleBtn.checked){
+        currentLanguage="es";
+    }else{
+        currentLanguage='en';
+    }
+    loadContent(currentLanguage);
+    
     });
 
     // Cargar contenido inicial basado en el idioma actual
