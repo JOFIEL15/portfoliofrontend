@@ -9,6 +9,22 @@ document.addEventListener('DOMContentLoaded', function () {
     const imElement = document.getElementById('im-txt');
     const frontendElement = document.getElementById('frontend-txt');
     const toggleBtn = document.getElementById('toggle-btn');
+    const tituloaboutElement = document.getElementById('tituloabout');
+    const textoaboutmeElement = document.getElementById('textoaboutme');
+    const frameworksElement = document.getElementById('frameworks');
+    const portfolioElement = document.getElementById('portfolio');
+    const portfolio2Element = document.getElementById('portfolio2');
+    const generadorElement = document.getElementById('generador');
+    const devElements = document.getElementsByClassName('dev'); // Colección de elementos con clase 'dev'
+    const landingElement=document.getElementById('landing');
+    const signElement=document.getElementById('sign');
+    const caseritaElement=document.getElementById('caserita');
+    const medicalElement=document.getElementById('medical');
+    const carwashElement=document.getElementById('carwash');
+    const contactoElement=document.getElementById('contacto');
+
+
+
 
     // Cargar idioma desde localStorage si está disponible, por defecto 'en'
     let currentLanguage = localStorage.getItem('language') || 'en';
@@ -33,19 +49,35 @@ document.addEventListener('DOMContentLoaded', function () {
                 holaElement.textContent = data[language]['holatxt'];
                 imElement.textContent = data[language]['im-txt'];
                 frontendElement.textContent = data[language]['frontend-txt'];
+                tituloaboutElement.textContent = data[language]['tituloabout'];
+                textoaboutmeElement.textContent = data[language]['textoaboutme'];
+                frameworksElement.textContent = data[language]['frameworks'];
+                portfolioElement.textContent = data[language]['portfolio'];
+                portfolio2Element.textContent = data[language]['portfolio2'];
+                generadorElement.textContent = data[language]['generador'];
+                landingElement.textContent=data[language]['landing'];
+                signElement.textContent=data[language]['sign'];
+                caseritaElement.textContent=data[language]['caserita'];
+                medicalElement.textContent=data[language]['medical'];
+                carwashElement.textContent=data[language]['carwash'];
+                contactoElement.textContent=data[language]['contacto'];
+
+
+
+
+                // Actualizar todos los elementos con clase 'dev'
+                Array.from(devElements).forEach(el => {
+                    el.textContent = data[language]['dev'];
+                });
             })
-            .catch(error=>console.log(error));
-        };
-    
+            .catch(error => console.log(error));
+    };
+
     // Evento de cambio en el botón de alternancia
     toggleBtn.addEventListener('change', () => {
-    if(toggleBtn.checked){
-        currentLanguage="es";
-    }else{
-        currentLanguage='en';
-    }
-    loadContent(currentLanguage);
-    
+        currentLanguage = toggleBtn.checked ? 'es' : 'en';
+        loadContent(currentLanguage);
+        localStorage.setItem('language', currentLanguage); // Guarda la preferencia en localStorage
     });
 
     // Cargar contenido inicial basado en el idioma actual
