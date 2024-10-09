@@ -12,13 +12,13 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
   <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css" />
-  
+
   //scripts
 
   <script src="https://unpkg.com/@popperjs/core@2"></script>
   <script src="https://unpkg.com/tippy.js@6"></script>
 
-  
+
 
 
 
@@ -26,17 +26,18 @@
 
 <body>
   <nav>
-    <div class="container flex items-center justify-center p-6 mx-auto text-gray-600 capitalize dark:text-gray-300">
+    <div class="fixed-top container flex items-center justify-center p-6 mx-auto text-white capitalize ">
+
       <a id="nav-start" href="#start"
-        class="nav-link text-gray-800 dark:text-gray-200 border-b-2 border-black mx-1.5 sm:mx-6 text-sm sm:text-base">Start</a>
+        class="nav-link text-white dark:text-white border-b-2 border-white mx-1.5 sm:mx-6 text-sm sm:text-base">Start</a>
       <a id="nav-about" href="#about"
-        class="nav-link border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-black mx-1.5 sm:mx-6 text-sm sm:text-base">About</a>
+        class="nav-link text-white dark:text-white border-b-2 border-transparent hover:text-white hover:border-white mx-1.5 sm:mx-6 text-sm sm:text-base">About</a>
       <a id="nav-lenguajes" href="#languages"
-        class="nav-link border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-black mx-1.5 sm:mx-6 text-sm sm:text-base">Languages</a>
+        class="nav-link text-white dark:text-white border-b-2 border-transparent hover:text-white hover:border-white mx-1.5 sm:mx-6 text-sm sm:text-base">Languages</a>
       <a id="nav-projects" href="#projects"
-        class="nav-link border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-black mx-1.5 sm:mx-6 text-sm sm:text-base">Projects</a>
+        class="nav-link text-white dark:text-white border-b-2 border-transparent hover:text-white hover:border-white mx-1.5 sm:mx-6 text-sm sm:text-base">Projects</a>
       <a id="nav-contact" href="#contact"
-        class="nav-link border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-black mx-1.5 sm:mx-6 text-sm sm:text-base">Contact</a>
+        class="nav-link text-white dark:text-white border-b-2 border-transparent hover:text-white hover:border-white mx-1.5 sm:mx-6 text-sm sm:text-base">Contact</a>
 
       <label class="switch">
         <input type="checkbox" id="toggle-btn">
@@ -50,27 +51,28 @@
       <div class="w-full h-full xl:px-16 xs: ml-2 px-8 flex gap-4 justify-center items-center">
         <div class="w-full">
           <h4 id="hola-txt" class="sm:text-2xl xs:text-md text-white ">Hello, My name is Jofiel Ontiveros
-            
-            <h1 id="im-txt" class="mt-4 sm:text-4xl xs:text-3xl text-white">I'm  
+
+            <h1 id="im-txt" class="mt-4 sm:text-4xl xs:text-3xl text-white">I'm
             </h1>
             <span class="typing  text-white"></span>
 
-            
-            
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
-  <script>
-      var typed = new Typed('.typing', {
-      strings: ['', 'Software engineer,', 'Frontend Developer,'],
-      typeSpeed: 100,
-      BackSpeed: 60,
-      loop: true
-  })
-  </script>
-          
 
-          <p id="frontend-txt" class="mt-4 sm:text-lg xs:text-md text-white">Experienced front-end Developer
-            with 2+
-            years of expertise in Html, CSS, JS, PHP, SQL, and other technologies.</p>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+              referrerpolicy="no-referrer"></script>
+            <script>
+              var typed = new Typed('.typing', {
+                strings: ['', 'Software engineer,', 'Frontend Developer,'],
+                typeSpeed: 100,
+                BackSpeed: 60,
+                loop: true
+              })
+            </script>
+
+
+            <p id="frontend-txt" class="mt-4 sm:text-lg xs:text-md text-white">Experienced front-end Developer
+              with 2+
+              years of expertise in Html, CSS, JS, PHP, SQL, and other technologies.</p>
         </div>
 
         <div class="xl:max-w-[30%] md:max-w-[30%] h-fit hidden md:block ">
@@ -87,7 +89,7 @@
   <br><br><br id="about">
   <section class="p-4 mt-20  mb-40" data-aos="fade-right" data-aos-duration="1500">
     <div class="container mx-auto">
-      <h2 id="tituloabout"  class="text-3xl text-black font-bold">About Me</h2>
+      <h2 id="tituloabout" class="text-3xl text-black font-bold">About Me</h2>
       <p id="textoaboutme" class="text-lg mt-4">
         Hello! I am a passionate software engineer with a solid background in application development and an insatiable
         thirst to learn and grow in the world of technology. With a curious mind and a passion for solving problems, my
@@ -113,7 +115,7 @@
 
 
   <section class="text-gray-700 body-font" data-aos="flip-left" data-aos-duration="1500" id="languages">
-    <div id="frameworks"  class=" ml-20 flex justify-center mt-10 text-4xl font-regular text-black">
+    <div id="frameworks" class=" ml-20 flex justify-center mt-10 text-4xl font-regular text-black">
       Languages ​​and frameworks with which I have experience
     </div>
     <div class="container px-5 py-12 mx-auto">
@@ -203,18 +205,19 @@
     <div class="container mx-auto ">
       <div class="text-center mb-12">
         <h2 id="portfolio" class="text-4xl font-bold mb-4">Portfolio Showcase</h2>
-        <p id="portfolio2"  class="text-lg text-black font-semibold">Discover my latest projects and success stories</p>
+        <p id="portfolio2" class="text-lg text-black font-semibold">Discover my latest projects and success stories</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-        <div class="group portfolio-item relative hover:shadow-lg shadow-md rounded-lg overflow-hidden">
+        <div class="group portfolio-item relative hover:shadow-lg shadow-md rounded-lg overflow-hidden transform hover:scale-110 transition duration-300">
           <a href="https://generadorconstanciasuadeo.000webhostapp.com/constancias.php">
             <img class="w-full h-60 object-cover" src="img/proyecto1.JPG" alt="Project 1">
             <div
               class="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-r from-white to-blue-500 opacity-0 transition duration-300 ease-in-out group-hover:opacity-70">
             </div>
             <div class="p-4 flex flex-col items-center justify-between relative z-10">
-              <h3 id="generador"  class="text-lg font-medium text-txt group-hover:text-gray-dark"> Certificate generator for my
+              <h3 id="generador" class="text-lg font-medium text-txt group-hover:text-gray-dark"> Certificate generator
+                for my
                 university</h3>
               <span class="text-sm font-bold text-black group-hover:text-indigo-500 dev">Developed with:</span>
               <div class="flex flex-row mt-2">
@@ -236,7 +239,7 @@
         </div>
 
 
-        <div class="group portfolio-item relative hover:shadow-lg shadow-md rounded-lg overflow-hidden">
+        <div class="group portfolio-item relative hover:shadow-lg shadow-md rounded-lg overflow-hidden transform hover:scale-110 transition duration-300">
           <a href="https://jofiel15.github.io/cv-jofielontiveros">
             <img class="w-full h-60 object-cover" src="img/cv.png" alt="Project 2">
             <div
@@ -261,14 +264,15 @@
           </a>
         </div>
 
-        <div class="group portfolio-item relative hover:shadow-lg shadow-md rounded-lg overflow-hidden">
+        <div class="group portfolio-item relative hover:shadow-lg shadow-md rounded-lg overflow-hidden transform hover:scale-110 transition duration-300">
           <a href="https://bienesraicesduranh.com/">
             <img class="w-full h-60 object-cover" src="img/proyecto2.JPG" alt="Project 2">
             <div
               class="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-r from-white to-blue-500 opacity-0 transition duration-300 ease-in-out group-hover:opacity-70">
             </div>
             <div class="p-4 flex flex-col items-center justify-between relative z-10">
-              <h3 id="landing" class="text-lg font-medium text-txt group-hover:text-gray-dark">Landing Page for real estate</h3>
+              <h3 id="landing" class="text-lg font-medium text-txt group-hover:text-gray-dark">Landing Page for real
+                estate</h3>
               <span class="text-sm font-bold text-black group-hover:text-indigo-500 dev">Developed with:</span>
 
 
@@ -290,14 +294,15 @@
             </div>
           </a>
         </div>
-        <div class="group portfolio-item relative hover:shadow-lg shadow-md rounded-lg overflow-hidden">
+        <div class="group portfolio-item relative hover:shadow-lg shadow-md rounded-lg overflow-hidden transform hover:scale-110 transition duration-300 ">
           <a href="https://github.com/JOFIEL15/signtransationjofielontiveros">
             <img class="w-full h-60 object-cover" src="img/proyecto3.JPG" alt="Project 3">
             <div
               class="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-r from-white to-blue-500 opacity-0 transition duration-300 ease-in-out group-hover:opacity-70">
             </div>
             <div class="p-4 flex flex-col items-center justify-between relative z-10">
-              <h3 id="sign"  class="text-lg font-medium text-txt group-hover:text-gray-dark">Sign translation program</h3>
+              <h3 id="sign" class="text-lg font-medium text-txt group-hover:text-gray-dark">Sign translation program
+              </h3>
               <span class="text-sm font-bold text-black group-hover:text-indigo-500 dev">Developed with:</span>
               <div class="flex flex-row mt-2">
 
@@ -314,14 +319,15 @@
             </div>
           </a>
         </div>
-        <div class="group portfolio-item relative hover:shadow-lg shadow-md rounded-lg overflow-hidden">
+        <div class="group portfolio-item relative hover:shadow-lg shadow-md rounded-lg overflow-hidden transform hover:scale-110 transition duration-300">
           <a href="https://jofiel15.github.io/caserita/index.html">
             <img class="w-full h-60 object-cover" src="img/caserita.png" alt="Project 4">
             <div
               class="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-r from-white to-blue-500 opacity-0 transition duration-300 ease-in-out group-hover:opacity-70">
             </div>
             <div class="p-4 flex flex-col items-center justify-between relative z-10">
-              <h3 id="caserita" class="text-lg font-medium text-txt group-hover:text-gray-dark"> Project Landing Page</h3>
+              <h3 id="caserita" class="text-lg font-medium text-txt group-hover:text-gray-dark"> Project Landing Page
+              </h3>
               <span class="text-sm font-bold text-black group-hover:text-indigo-500 dev">Developed with:</span>
               <div class="flex flex-row mt-2">
 
@@ -337,14 +343,15 @@
           </a>
         </div>
 
-        <div class="group portfolio-item relative hover:shadow-lg shadow-md rounded-lg overflow-hidden">
+        <div class="group portfolio-item relative hover:shadow-lg shadow-md rounded-lg overflow-hidden transform hover:scale-110 transition duration-300 ">
           <a href="https://github.com/JOFIEL15/sistemaconsultorio/releases">
             <img class="w-full h-60 object-cover" src="img/proyecto4.JPG" alt="Project 5">
             <div
               class="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-r from-white to-blue-500 opacity-0 transition duration-300 ease-in-out group-hover:opacity-70">
             </div>
             <div class="p-4 flex flex-col items-center justify-between relative z-10">
-              <h3 id="medical" class="text-lg font-medium text-txt group-hover:text-gray-dark"> Medical office system</h3>
+              <h3 id="medical" class="text-lg font-medium text-txt group-hover:text-gray-dark"> Medical office system
+              </h3>
               <span class="text-sm font-bold text-black group-hover:text-indigo-500 dev">Developed with:</span>
 
               <div class="flex flex-row mt-2">
@@ -358,7 +365,7 @@
           </a>
         </div>
 
-        <div class="group portfolio-item relative hover:shadow-lg shadow-md rounded-lg overflow-hidden">
+        <div class="group portfolio-item relative hover:shadow-lg shadow-md rounded-lg overflow-hidden transform hover:scale-110 transition duration-300">
           <a href="https://jofiel15.github.io/autolavadoweb">
             <img class="w-full h-60 object-cover" src="img/carwas.JPG" alt="Project 6">
             <div
@@ -391,23 +398,23 @@
   </script>
   <footer class="bg-black text-white py-8" id="contact" data-aos="" data-aos-duration="">
     <div class="container mx-auto flex flex-col items-center justify-center">
-      <h2 id="contacto"   class="text-2xl font-bold mb-8">Contact</h2>
+      <h2 id="contacto" class="text-2xl font-bold mb-8">Contact</h2>
       <div class="flex space-x-6">
         <a data-tippy-content="My Linkedin"
           href="https://www.linkedin.com/in/jofiel-alfredo-ontiveros-rivera-48583022b/" target="_blank">
-          <svg class="w-10 h-10 fill-current text-white" viewBox="0 0 24 24">
+          <svg class="w-10 h-10 fill-current text-white transform hover:scale-110 transition duration-300" viewBox="0 0 24 24">
             <path
               d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.18c-.97 0-1.75-.79-1.75-1.76 0-.97.79-1.76 1.75-1.76s1.75.79 1.75 1.76c0 .97-.79 1.76-1.75 1.76zm13.5 11.18h-3v-5.39c0-1.28-.03-2.92-1.77-2.92-1.77 0-2.04 1.38-2.04 2.82v5.49h-3v-10h2.88v1.36h.04c.4-.76 1.38-1.56 2.84-1.56 3.03 0 3.59 1.99 3.59 4.58v5.62z" />
           </svg>
         </a>
         <a data-tippy-content="My Email" href="mailto:jofiel.ontiveros.jo@gmail.com">
-          <svg class="w-10 h-10 fill-current text-white" viewBox="0 0 24 24">
+          <svg class="w-10 h-10 fill-current text-white transform hover:scale-110 transition duration-300" viewBox="0 0 24 24">
             <path
               d="M12 13.5c-.48 0-.91-.2-1.24-.52l-10.64-8.98 22.36-.01-10.65 8.99c-.32.32-.75.52-1.23.52zm12-8.5v13c0 1.1-.9 2-2 2h-20c-1.1 0-2-.9-2-2v-13c0-1.1.9-2 2-2h20c1.1 0 2 .9 2 2zm-22 0v1.23l10 8.45 10-8.44v-1.24h-20z" />
           </svg>
         </a>
         <a id="github" data-tippy-content="My Github" href="https://github.com/JOFIEL15" target="_blank">
-          <svg class="w-10 h-10 fill-current text-white " viewBox="0 0 24 24">
+          <svg class="w-10 h-10 fill-current text-white transform hover:scale-110 transition duration-300 " viewBox="0 0 24 24">
             <path
               d="M12 2c-5.52 0-10 4.48-10 10 0 4.42 2.87 8.17 6.84 9.5.5.09.68-.22.68-.48v-1.74c-2.78.61-3.36-1.19-3.36-1.19-.45-1.16-1.11-1.47-1.11-1.47-.91-.63.07-.62.07-.62 1.01.07 1.54 1.03 1.54 1.03.89 1.53 2.34 1.09 2.91.83.09-.64.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.95 0-1.09.39-1.98 1.02-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02.8-.22 1.66-.33 2.51-.34.85.01 1.71.12 2.51.34 1.9-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.63.7 1.02 1.59 1.02 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.86v2.76c0 .27.18.58.69.48 3.97-1.34 6.84-5.08 6.84-9.5 0-5.52-4.48-10-10-10z" />
           </svg>
