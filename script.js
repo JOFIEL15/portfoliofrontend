@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Elementos de navegación y contenido
+    // Declaramos los elementos que vamos a usar
     const navstartElement = document.getElementById('nav-start');
     const navaboutElement = document.getElementById('nav-about');
     const navlenguajesElement = document.getElementById('nav-lenguajes');
