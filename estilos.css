@@ -30,6 +30,9 @@ body {
     overflow-x: hidden; /* Esto bloquea el desplazamiento horizontal */
 }
 
+main{
+    background-color: #000000;
+}
 
 footer{
     margin-top: 120px;
@@ -57,4 +60,108 @@ h1, .typing {
 
 h1 {
     margin-right: 8px; /* Espacio entre el h1 y el span */
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px; /* Ancho del switch */
+    height: 34px; /* Alto del switch */
+}
+
+.switch input {
+    opacity: 0; /* Oculta el checkbox */
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transition: .2s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3; /* Color cuando está activado */
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px); /* Mueve el botón a la derecha */
+}
+
+/* Estilos para las banderas */
+.flag-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px; /* Ajusta el tamaño de las banderas */
+    height: 20px; /* Ajusta el tamaño de las banderas */
+}
+
+.flag-icon-usa {
+    left: 8px; /* Posición de la bandera USA */
+    display: inline-block; /* Muestra la bandera de USA por defecto */
+}
+
+.flag-icon-mexico {
+    right: 8px; /* Posición de la bandera de México */
+    display: none; /* Oculta la bandera de México por defecto */
+}
+
+input:checked + .slider .flag-icon-usa {
+    display: none; /* Oculta la bandera USA cuando está activado */
+}
+
+input:checked + .slider .flag-icon-mexico {
+    display: inline-block; /* Muestra la bandera de México cuando está activado */
+}
+
+@media (max-width: 600px) {
+    .switch {
+        width: 20px; /* Ancho más pequeño en pantallas móviles */
+        height: 12px; /* Alto más pequeño en pantallas móviles */
+    }
+
+    .slider:before {
+        display: none; /* Oculta la bolita en móviles */
+    }
+
+    .flag-icon {
+        width: 14px; /* Tamaño de las banderas más pequeño en móviles */
+        height: 14px; /* Tamaño de las banderas más pequeño en móviles */
+
+        transition: left 4s ease; /* Añadir animación a la posición */
+    }
+
+    /* Elimina transiciones en móviles */
+    .slider {
+        transition: none; /* Sin animaciones */
+    }
+    .flag-icon-usa {
+        left: 0px; /* Ajusta la posición de la bandera USA a la izquierda */
+    }
+
+    .flag-icon-mexico {
+        left: 5px; /* Posición de la bandera de México a la derecha */
+ 
+   }
+   
 }
