@@ -21,7 +21,8 @@
         "caserita":"Landing Page",
         "medical":"Medical office system" ,
         "carwash":"Carwash Website",
-        "contacto":"Contact"
+        "contacto":"Contact",
+        "cv":"Download CV"
     },
     
       "es": {
@@ -45,7 +46,8 @@
         "caserita":"Pagina web Tortilleria"
         ,"medical":"Sistema para consultorio privado",
         "carwash":"Sitio web para autolavado",
-        "contacto":"Contacto"
+        "contacto":"Contacto",
+        "cv":"Descargar CV"
       }
     
   }

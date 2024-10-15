@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const medicalElement=document.getElementById('medical');
     const carwashElement=document.getElementById('carwash');
     const contactoElement=document.getElementById('contacto');
+    const cvElement=document.getElementById('cv');
 
 
 
@@ -61,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 medicalElement.textContent=data[language]['medical'];
                 carwashElement.textContent=data[language]['carwash'];
                 contactoElement.textContent=data[language]['contacto'];
-
+                cvElement.textContent=data[language]['cv'];
 
 
 
