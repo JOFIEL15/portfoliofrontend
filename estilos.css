@@ -3,7 +3,7 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    color: rgb(255 255 255);
+    background-color: #131927;
 }
 
 nav {
@@ -13,7 +13,7 @@ nav {
     padding-top: 0px;
     width: 100%;
     height: 60px;
-    background-color: #000000;
+    background-color:#131927;
     z-index: 999; /* Asegura que la barra de navegación esté por encima de otros elementos */
 }
 
@@ -34,6 +34,43 @@ body {
 main{
     background-color: #000000;
 }
+
+.featured-image{
+    display: flex;
+    justify-content: right;
+    align-content: center;
+    min-height: 80vh;
+    width: 50%;
+}
+
+.imagen-hero{
+    margin: auto 0;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    overflow: hidden;
+    animation: imgFloat 7s ease-in-out infinite;
+}
+
+
+
+@keyframes imgFloat{
+    50%{
+        transform: translateY(10px);
+    }
+}
+
+@media (max-width: 600px) {
+  .featured-image{
+    display: none;
+  }
+
+  .imagen-hero{
+    display: none;
+  }
+  }
+  
+
 
 footer{
     margin-top: 120px;
