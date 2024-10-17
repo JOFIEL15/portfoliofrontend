@@ -13,9 +13,12 @@
   <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
   <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Flowbite CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
 
 
-  //scripts
+
+
 
   <script src="https://unpkg.com/@popperjs/core@2"></script>
   <script src="https://unpkg.com/tippy.js@6"></script>
@@ -27,33 +30,45 @@
 </head>
 
 <body>
-  <nav class="fixed top-0 w-full z-10">
-    <div class="container flex flex-wrap items-center justify-center p-4 mx-auto ">
 
-      <a id="nav-start" href="#start"
-        class="nav-link text-white dark:text-white border-b-2 border-white mx-1.5 sm:mx-6 text-sm sm:text-base">Start</a>
-        <a id="nav-lenguajes" href="#languages"
-        class="nav-link text-white dark:text-white border-b-2 border-transparent hover:text-white hover:border-white mx-1.5 sm:mx-6 text-sm sm:text-base">Skills</a>
-      <a id="nav-about" href="#about"
-        class="nav-link text-white dark:text-white border-b-2 border-transparent hover:text-white hover:border-white mx-1.5 sm:mx-6 text-sm sm:text-base">About</a>
-      <a id="nav-projects" href="#projects"
-        class="nav-link text-white dark:text-white border-b-2 border-transparent hover:text-white hover:border-white mx-1.5 sm:mx-6 text-sm sm:text-base">Projects</a>
-      <a id="nav-contact" href="#contact"
-        class="nav-link text-white dark:text-white border-b-2 border-transparent hover:text-white hover:border-white mx-1.5 sm:mx-6 text-sm sm:text-base">Contact</a>
+  
 
-     <label class="switch ml-2">
-    <input type="checkbox" id="toggle-btn">
-    <span class="slider round">
-        <img src="img/usa.png" alt="USA" class="flag-icon flag-icon-usa">
-        <img src="img/mexico.png" alt="Mexico" class="flag-icon flag-icon-mexico">
-    </span>
-</label>
+<nav class="bg-white border-gray-200 dark:bg-gray-900">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+  <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <img src="img/icon.png" class="h-8" alt="Flowbite Logo" />
+
+  </a>
+  <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+      <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get started</button>
+      <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-cta" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+  </div>
+  <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+    <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+      <li>
+        <a href="#" class="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:dark:text-blue-500" aria-current="page">Home</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
 
 
 
-
-    </div>
-  </nav>
 <main>
   <section  data-aos="fade-up" data-aos-duration="1500">
     <div class="w-full h-screen relative fondo" id="start">
@@ -93,14 +108,14 @@
               <div class="flex flex-wrap text-center justify-center md:justify-start mt-5">
   <a data-tippy-content="My Linkedin"
   href="https://www.linkedin.com/in/jofiel-alfredo-ontiveros-rivera-48583022b/" target="_blank">
-  <svg class=" mr-5 w-10 h-10 fill-current text-white transform hover:scale-110 transition duration-300" viewBox="0 0 24 24">
+  <svg class=" mr-5 w-10 h-10 fill-current text-white transform hover:scale-110 transition duration-300" data-aos="fade-left" data-aos-delay="350" viewBox="0 0 24 24">
     <path
       d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.18c-.97 0-1.75-.79-1.75-1.76 0-.97.79-1.76 1.75-1.76s1.75.79 1.75 1.76c0 .97-.79 1.76-1.75 1.76zm13.5 11.18h-3v-5.39c0-1.28-.03-2.92-1.77-2.92-1.77 0-2.04 1.38-2.04 2.82v5.49h-3v-10h2.88v1.36h.04c.4-.76 1.38-1.56 2.84-1.56 3.03 0 3.59 1.99 3.59 4.58v5.62z" />
   </svg>
 </a>
 
 <a id="github" data-tippy-content="My Github" href="https://github.com/JOFIEL15" target="_blank">
-  <svg class=" mr-2 w-10 h-10 fill-current text-white transform hover:scale-110 transition duration-300 " viewBox="0 0 24 24">
+  <svg class=" mr-2 w-10 h-10 fill-current text-white transform hover:scale-110 transition duration-300 " data-aos="fade-left" data-aos-delay="350" viewBox="0 0 24 24">
     <path
       d="M12 2c-5.52 0-10 4.48-10 10 0 4.42 2.87 8.17 6.84 9.5.5.09.68-.22.68-.48v-1.74c-2.78.61-3.36-1.19-3.36-1.19-.45-1.16-1.11-1.47-1.11-1.47-.91-.63.07-.62.07-.62 1.01.07 1.54 1.03 1.54 1.03.89 1.53 2.34 1.09 2.91.83.09-.64.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.95 0-1.09.39-1.98 1.02-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02.8-.22 1.66-.33 2.51-.34.85.01 1.71.12 2.51.34 1.9-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.63.7 1.02 1.59 1.02 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.86v2.76c0 .27.18.58.69.48 3.97-1.34 6.84-5.08 6.84-9.5 0-5.52-4.48-10-10-10z" />
   </svg>
