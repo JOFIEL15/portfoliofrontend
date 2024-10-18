@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const holaElement = document.getElementById('hola-txt');
     const imElement = document.getElementById('im-txt');
     const frontendElement = document.getElementById('frontend-txt');
-    const toggleBtn = document.getElementById('toggle-btn');
     const tituloaboutElement = document.getElementById('tituloabout');
     const textoaboutmeElement = document.getElementById('textoaboutme');
     const frameworksElement = document.getElementById('frameworks');
@@ -16,20 +15,39 @@ document.addEventListener('DOMContentLoaded', function () {
     const portfolio2Element = document.getElementById('portfolio2');
     const generadorElement = document.getElementById('generador');
     const devElements = document.getElementsByClassName('dev'); // Colección de elementos con clase 'dev'
-    const landingElement=document.getElementById('landing');
-    const signElement=document.getElementById('sign');
-    const caseritaElement=document.getElementById('caserita');
-    const medicalElement=document.getElementById('medical');
-    const carwashElement=document.getElementById('carwash');
-    const contactoElement=document.getElementById('contacto');
-    const cvElement=document.getElementById('cv');
+    const landingElement = document.getElementById('landing');
+    const signElement = document.getElementById('sign');
+    const caseritaElement = document.getElementById('caserita');
+    const medicalElement = document.getElementById('medical');
+    const carwashElement = document.getElementById('carwash');
+    const contactoElement = document.getElementById('contacto');
+    const cvElement = document.getElementById('cv');
 
-
-
+    document.getElementById('dropdown-button').addEventListener('click', function() {
+        const menu = document.getElementById('dropdown-menu');
+        menu.classList.toggle('hidden');
+    });
 
     // Cargar idioma desde localStorage si está disponible, por defecto 'en'
     let currentLanguage = localStorage.getItem('language') || 'en';
-    toggleBtn.checked = currentLanguage === 'es';
+
+    // Función para cambiar el idioma según el país seleccionado
+    const changeLanguageBasedOnCountry = (country) => {
+        let language = 'en'; // Por defecto es inglés
+        if (country === 'mexico') {
+            language = 'es'; // Cambia a español si es México
+        }
+        loadContent(language);
+        localStorage.setItem('language', language); // Guarda la preferencia en localStorage
+    };
+
+    // Evento de clic en los enlaces del dropdown
+    document.getElementById('dropdown-menu').addEventListener('click', function (event) {
+        if (event.target.closest('a')) {
+            const country = event.target.closest('a').getAttribute('href').substring(1); // Obtiene el país del href
+            changeLanguageBasedOnCountry(country);
+        }
+    });
 
     // Función para cargar el contenido
     const loadContent = (language) => {
@@ -56,15 +74,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 portfolioElement.textContent = data[language]['portfolio'];
                 portfolio2Element.textContent = data[language]['portfolio2'];
                 generadorElement.textContent = data[language]['generador'];
-                landingElement.textContent=data[language]['landing'];
-                signElement.textContent=data[language]['sign'];
-                caseritaElement.textContent=data[language]['caserita'];
-                medicalElement.textContent=data[language]['medical'];
-                carwashElement.textContent=data[language]['carwash'];
-                contactoElement.textContent=data[language]['contacto'];
-                cvElement.textContent=data[language]['cv'];
-
-
+                landingElement.textContent = data[language]['landing'];
+                signElement.textContent = data[language]['sign'];
+                caseritaElement.textContent = data[language]['caserita'];
+                medicalElement.textContent = data[language]['medical'];
+                carwashElement.textContent = data[language]['carwash'];
+                contactoElement.textContent = data[language]['contacto'];
+                cvElement.textContent = data[language]['cv'];
 
                 // Actualizar todos los elementos con clase 'dev'
                 Array.from(devElements).forEach(el => {
@@ -73,13 +89,6 @@ document.addEventListener('DOMContentLoaded', function () {
             })
             .catch(error => console.log(error));
     };
-
-    // Evento de cambio en el botón de alternancia
-    toggleBtn.addEventListener('change', () => {
-        currentLanguage = toggleBtn.checked ? 'es' : 'en';
-        loadContent(currentLanguage);
-        localStorage.setItem('language', currentLanguage); // Guarda la preferencia en localStorage
-    });
 
     // Cargar contenido inicial basado en el idioma actual
     loadContent(currentLanguage);

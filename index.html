@@ -28,32 +28,94 @@
 
 <body>
 
+  <header>
+    <nav class="fixed top-0 w-full z-10 bg-gray-800 shadow">
+      <div class="container flex items-center justify-between p-4 mx-auto">
+        <button id="hamburger" class="text-white md:hidden focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+  
+        <div class="hidden md:flex items-center justify-center space-x-4 w-full">
+          <a id="nav-start" href="#start" class="nav-link text-white border-b-2 border-transparent hover:border-white">Start</a>
+          <a id="nav-lenguajes" href="#languages" class="nav-link text-white border-b-2 border-transparent hover:border-white">Skills</a>
+          <a id="nav-about" href="#about" class="nav-link text-white border-b-2 border-transparent hover:border-white">About</a>
+          <a id="nav-projects" href="#projects" class="nav-link text-white border-b-2 border-transparent hover:border-white">Projects</a>
+          <a id="nav-contact" href="#contact" class="nav-link text-white border-b-2 border-transparent hover:border-white">Contact</a>
+  
+          <div class="relative inline-block text-left">
+            <button id="dropdown-button" class="flex items-center text-white focus:outline-none">
+              🌐
+            </button>
+            <div id="dropdown-menu" class="hidden absolute left-0 z-20 mt-1 w-48 bg-white rounded-md shadow-lg">
+              <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-button">
+                <a href="#usa" class="flex justify-center items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">
+                  <img src="https://flagcdn.com/us.svg" alt="USA" class="w-6 h-4"> 
+                  <span class="ml-2">EN</span>
+                </a>
+                <a href="#mexico" class="flex justify-center items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">
+                  <img src="https://flagcdn.com/mx.svg" alt="Mexico" class="w-6 h-4"> 
+                  <span class="ml-2">ES</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Menú hamburguesa -->
+      <div id="mobile-menu" class="md:hidden hidden">
+        <div class="flex flex-col p-4 bg-gray-800">
+          <a id="nav-start" href="#start" class="text-white py-2">Start</a>
+          <a id="nav-lenguajes" href="#languages" class="text-white py-2">Skills</a>
+          <a id="nav-about" href="#about" class="text-white py-2">About</a>
+          <a id="nav-projects" href="#projects" class="text-white py-2">Projects</a>
+          <a id="nav-contact" href="#contact" class="text-white py-2">Contact</a>
+          
+          <div class="relative inline-block text-left mt-2">
+            <button id="dropdown-button-mobile" class="flex items-center text-white">
+              🌐
+            </button>
+            <div id="dropdown-menu-mobile" class="hidden absolute left-0 z-20 mt-1 w-48 bg-white rounded-md shadow-lg">
+              <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-button-mobile">
+                <a href="#usa" class="flex justify-center items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">
+                  <img src="https://flagcdn.com/us.svg" alt="USA" class="w-6 h-4"> 
+                  <span class="ml-2">EN</span>
+                </a>
+                <a href="#mexico" class="flex justify-center items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">
+                  <img src="https://flagcdn.com/mx.svg" alt="Mexico" class="w-6 h-4"> 
+                  <span class="ml-2">ES</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
 
-  <nav class="fixed top-0 w-full z-10">
-    <div class="container flex flex-wrap items-center justify-center p-4 mx-auto ">
+<script>
+  // Toggle mobile menu
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
 
-      <a id="nav-start" href="#start"
-        class="nav-link text-white dark:text-white border-b-2 border-white mx-1.5 sm:mx-6 text-sm sm:text-base">Start</a>
-      <a id="nav-lenguajes" href="#languages"
-        class="nav-link text-white dark:text-white border-b-2 border-transparent hover:text-white hover:border-white mx-1.5 sm:mx-6 text-sm sm:text-base">Skills</a>
-      <a id="nav-about" href="#about"
-        class="nav-link text-white dark:text-white border-b-2 border-transparent hover:text-white hover:border-white mx-1.5 sm:mx-6 text-sm sm:text-base">About</a>
-      <a id="nav-projects" href="#projects"
-        class="nav-link text-white dark:text-white border-b-2 border-transparent hover:text-white hover:border-white mx-1.5 sm:mx-6 text-sm sm:text-base">Projects</a>
-      <a id="nav-contact" href="#contact"
-        class="nav-link text-white dark:text-white border-b-2 border-transparent hover:text-white hover:border-white mx-1.5 sm:mx-6 text-sm sm:text-base">Contact</a>
+  hamburger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
 
-      <label class="switch ml-2">
-        <input type="checkbox" id="toggle-btn">
+  // Toggle dropdown menu in mobile view
+  const dropdownButtonMobile = document.getElementById('dropdown-button-mobile');
+  const dropdownMenuMobile = document.getElementById('dropdown-menu-mobile');
 
-      </label>
+  dropdownButtonMobile.addEventListener('click', () => {
+    dropdownMenuMobile.classList.toggle('hidden');
+  });
+</script>
 
-
-
-
-    </div>
-  </nav>
-
+  
+  
 
 
   <main>
