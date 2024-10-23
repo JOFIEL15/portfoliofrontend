@@ -172,4 +172,8 @@ h1 {
     .hamburger {
         display: flex;
     }
+
+ .img-hero{
+    display: none;
+ }
 }
