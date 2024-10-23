@@ -1,53 +1,50 @@
 {
-    "en": {
-      "nav-start": "Start",
-      "nav-about": "About",
-      "nav-lenguajes": "Skills",
-      "nav-projects": "Projects",
-      "nav-contact": "Contact",
-      "holatxt": "Hello, My name is Jofiel Ontiveros 👋",
-      "im-txt": "I'm",
-      "frontend-txt": "Experienced front-end Developer with 2+ years of expertise in Html, CSS, JS, PHP, SQL, and other technologies. 🌐",
-      "tituloabout": "About me",
-      "textoaboutme": "Hello! I am a passionate software engineer with a solid background in application development and an insatiable thirst to learn and grow in the world of technology. With a curious mind and a passion for solving problems, my goal is to create innovative solutions that make life easier and more efficient for people. My journey in programming began with an early fascination with computer science, and I have been immersed in the world of software development ever since. I have experience in various technologies and programming languages, from Java and Python to JavaScript and SQL. My focus is on creating clean and efficient code, as well as designing scalable and robust architectures. In addition to my technical ability, I consider myself an excellent communicator and an effective collaborator in multidisciplinary teams. I enjoy working in dynamic environments where I can share ideas and learn from my colleagues. My current search focuses on challenging opportunities where I can apply my technical and creative skills to contribute to the development of innovative solutions. I am excited by the possibility of being part of a visionary team that shares my passion for technology and quality software development. I hope to have the opportunity to work together and do great things!"
-   ,"frameworks": "Skills"
-    , "portfolio":"Portfolio Showcase",
-     "portfolio2":"Discover my latest projects and success stories",
-      "generador":"Certificate generator for my university"
-   ,"dev":"Developed with:",
-   "landing":"Landing Page for real state",
-   
-        "sign":"Sign translation program ",
-        "caserita":"Landing Page",
-        "medical":"Medical office system" ,
-        "carwash":"Carwash Website",
-        "contacto":"Contact",
-        "cv":"Download CV"
-    },
-    
-      "es": {
-        "nav-start": "Inicio",
-        "nav-about": "Sobre mí",
-        "nav-lenguajes": "Habilidades",
-        "nav-projects": "Proyectos",
-        "nav-contact": "Contacto",
-        "holatxt": "Hola, mi nombre es Jofiel Ontiveros 👋",
-        "im-txt": "Soy",
-        "frontend-txt": "Desarrollador front-end con más de 2 años de experiencia en HTML, CSS, JS, PHP, SQL y otras tecnologías. 🌐",
-        "tituloabout": "Sobre mí",
-        "textoaboutme": "Soy ingeniero de software con sólida experiencia en desarrollo de aplicaciones y una constante motivación por aprender y mejorar. Mi objetivo es crear soluciones eficientes y escalables, con un enfoque en código limpio y arquitectura robusta. He trabajado con tecnologías como Java, Python, JavaScript y SQL. Me considero un colaborador eficaz en equipos multidisciplinarios y disfruto de entornos dinámicos que fomentan el crecimiento profesional.",
-        "frameworks": "Habilidades",
-        "portfolio": "Mi Portafolio",
-        "portfolio2": "Proyectos realizados",
-        "generador": "Generador de certificados UADEO"
-        ,"dev":"Desarrollado con:",
-        "landing":"Pagina web para inmobiliaria",
-        "sign":"Traductor lenguaje de señas ",
-        "caserita":"Pagina web Tortilleria"
-        ,"medical":"Sistema para consultorio privado",
-        "carwash":"Sitio web para autolavado",
-        "contacto":"Contacto",
-        "cv":"Descargar CV"
-      }
-    
+  "en": {
+    "nav-start": "Start",
+    "nav-about": "About",
+    "nav-lenguajes": "Skills",
+    "nav-projects": "Projects",
+    "nav-contact": "Contact",
+    "holatxt": "Hello, my name is...",
+    "im-txt": "I'm a developer",
+    "frontend-txt": "Frontend Developer",
+    "tituloabout": "About Me",
+    "textoaboutme": "I am a web developer with skills in HTML, CSS, JavaScript...",
+    "frameworks": "Frameworks",
+    "portfolio": "Portfolio",
+    "portfolio2": "My Projects",
+    "generador": "Generator",
+    "landing": "Landing Page",
+    "sign": "Sign Up Form",
+    "caserita": "Caserita Website",
+    "medical": "Medical App",
+    "carwash": "Carwash Website",
+    "contacto": "Contact Me",
+    "cv": "Download CV",
+    "dev": "Developed with:"
+  },
+  "es": {
+    "nav-start": "Inicio",
+    "nav-about": "Sobre mí",
+    "nav-lenguajes": "Habilidades",
+    "nav-projects": "Proyectos",
+    "nav-contact": "Contacto",
+    "holatxt": "Hola, me llamo...",
+    "im-txt": "Soy desarrollador",
+    "frontend-txt": "Desarrollador Frontend",
+    "tituloabout": "Sobre mí",
+    "textoaboutme": "Soy un desarrollador web con habilidades en HTML, CSS, JavaScript...",
+    "frameworks": "Frameworks",
+    "portfolio": "Portafolio",
+    "portfolio2": "Mis Proyectos",
+    "generador": "Generador",
+    "landing": "Página de Aterrizaje",
+    "sign": "Formulario de Registro",
+    "caserita": "Sitio Web Caserita",
+    "medical": "App Médica",
+    "carwash": "Sitio Web de Autolavado",
+    "contacto": "Contáctame",
+    "cv": "Descargar CV",
+    "dev": "Desarrollado con:"
   }
+}
