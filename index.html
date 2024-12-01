@@ -48,28 +48,7 @@
             class="nav-link text-white border-b-2 border-transparent hover:border-white">Projects</a>
           <a id="nav-contact" href="#contact"
             class="nav-link text-white border-b-2 border-transparent hover:border-white">Contact</a>
-
-          <div class="relative inline-block text-left">
-            <button id="dropdown-button" class="flex items-center text-white focus:outline-none">
-              🌐
-            </button>
-            <div id="dropdown-menu" class="hidden absolute left-0 z-20 mt-1 w-48 bg-white rounded-md shadow-lg">
-              <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-button">
-                <a id="translate-en" href="#"
-                  class="flex justify-center items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                  role="menuitem">
-                  <img src="https://flagcdn.com/us.svg" alt="USA" class="w-6 h-4">
-                  <span class="ml-2">EN</span>
-                </a>
-                <a id="translate-es" href="#"
-                  class="flex justify-center items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                  role="menuitem">
-                  <img src="https://flagcdn.com/mx.svg" alt="Mexico" class="w-6 h-4">
-                  <span class="ml-2">ES</span>
-                </a>
-              </div>
-            </div>
-          </div>
+</div>
         </div>
       </div>
       </div>
@@ -77,7 +56,7 @@
 
 
       <!-- Menú hamburguesa -->
-      <div id="mobile-menu" class="md:hidden hidden">
+      <div id="mobile-menu" class=" md:hidden hidden">
         <div class="flex flex-col p-4 bg-gray-800">
           <a id="nav-start" href="#start" class="text-white py-2">Start</a>
           <a id="nav-lenguajes" href="#languages" class="text-white py-2">Skills</a>
@@ -85,26 +64,6 @@
           <a id="nav-projects" href="#projects" class="text-white py-2">Projects</a>
           <a id="nav-contact" href="#contact" class="text-white py-2">Contact</a>
 
-          <div class="relative inline-block text-left mt-2">
-            <button id="dropdown-button-mobile" class="flex items-center text-white">
-              🌐
-            </button>
-            <div id="dropdown-menu-mobile" class="hidden absolute left-0 z-20 mt-1 w-48 bg-white rounded-md shadow-lg">
-              <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-button-mobile">
-                <a href="#usa"
-                  class="flex justify-center items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                  role="menuitem">
-                  <img src="https://flagcdn.com/us.svg" alt="USA" class="w-6 h-4">
-                  <span class="ml-2">EN</span>
-                </a>
-                <a href="#mexico"
-                  class="flex justify-center items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                  role="menuitem">
-                  <img src="https://flagcdn.com/mx.svg" alt="Mexico" class="w-6 h-4">
-                  <span class="ml-2">ES</span>
-                </a>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -112,23 +71,41 @@
   </header>
 
   <script>
-    // Toggle mobile menu
     const hamburger = document.getElementById('hamburger');
     const mobileMenu = document.getElementById('mobile-menu');
-
-    hamburger.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
+  
+    hamburger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      
+      if (mobileMenu.classList.contains('hidden')) {
+        mobileMenu.classList.remove('hidden');
+        mobileMenu.classList.remove('animate-fade-out');
+        mobileMenu.classList.add('animate-fade-in');
+      } else {
+        mobileMenu.classList.remove('animate-fade-in');
+        mobileMenu.classList.add('animate-fade-out');
+  
+        // Delay hiding the menu to let the animation complete
+        setTimeout(() => {
+          mobileMenu.classList.add('hidden');
+        }, 300); // Match duration of the fadeOut animation
+      }
     });
-
-    // Toggle dropdown menu in mobile view
-    const dropdownButtonMobile = document.getElementById('dropdown-button-mobile');
-    const dropdownMenuMobile = document.getElementById('dropdown-menu-mobile');
-
-    dropdownButtonMobile.addEventListener('click', () => {
-      dropdownMenuMobile.classList.toggle('hidden');
+  
+    // Cerrar el menú al hacer clic fuera
+    document.addEventListener('click', (e) => {
+      if (!mobileMenu.classList.contains('hidden') && !mobileMenu.contains(e.target) && e.target !== hamburger) {
+        mobileMenu.classList.remove('animate-fade-in');
+        mobileMenu.classList.add('animate-fade-out');
+  
+        setTimeout(() => {
+          mobileMenu.classList.add('hidden');
+        }, 300);
+      }
     });
   </script>
-
+  
+  
   <!-- Seccion hero -->
   <main>
     <section data-aos="fade-up" data-aos-duration="1500">
@@ -304,39 +281,42 @@
   </section>
 
   <!-- Seccion about -->
-  <section class="p-4 py-60 border-b-4  bg-gray-900" id="about">
-    <div class="container mx-auto mt-20 mb-40">
+  <section class="border-b-4 bg-gray-900 py-10 xl:py-20 2xl:py-60" id="about">
+    <div class="container mx-auto px-6 md:px-16 lg:px-24 xl:px-32 mt-20 mb-40">
       <h2 id="tituloabout"
-        class=" text-black flex justify-center mt-10 text-4xl font-regular text-white mx-auto font-bold"
+        class="text-center text-4xl font-bold text-white mb-6"
         data-aos="fade-right" data-aos-delay="100">About Me</h2>
-      <h3 id="webd" class="flex items-center text-2xl text-white justify-center mt-3 mx-auto font-semibold"
+      
+      <h3 id="webd" 
+        class="text-center text-2xl font-semibold text-white mb-4" 
         data-aos="fade-right" data-aos-delay="200">
-        An enthusiast Developer 💻
+        An Enthusiast Developer 💻
       </h3>
-      <p id="textoaboutme" class="text-lg mt-4 text-white" data-aos="fade-right" data-aos-delay="300">
+      
+      <p id="textoaboutme" 
+        class="text-lg leading-relaxed text-white md:text-justify" 
+        data-aos="fade-right" data-aos-delay="300">
         Hello! I am a passionate software engineer with a solid background in application development and an insatiable
         thirst to learn and grow in the world of technology. With a curious mind and a passion for solving problems, my
         goal is to create innovative solutions that make life easier and more efficient for people.
-
+        <br><br>
         My journey in programming began with an early fascination with computer science, and I have been immersed in the
         world of software development ever since. I have experience in various technologies and programming languages,
         from Java and Python to JavaScript and SQL. My focus is on creating clean and efficient code, as well as
         designing scalable and robust architectures.
-
+        <br><br>
         In addition to my technical ability, I consider myself an excellent communicator and an effective collaborator
         in multidisciplinary teams. I enjoy working in dynamic environments where I can share ideas and learn from my
         colleagues.
-
+        <br><br>
         My current search focuses on challenging opportunities where I can apply my technical and creative skills to
         contribute to the development of innovative solutions. I am excited by the possibility of being part of a
         visionary team that shares my passion for technology and quality software development.
-
+        <br><br>
         I hope to have the opportunity to work together and do great things!
       </p>
     </div>
   </section>
-
-
 
 
 
@@ -442,6 +422,45 @@
             </div>
           </a>
         </div>
+        <div
+          class="group portfolio-item relative hover:shadow-lg shadow-md rounded-lg overflow-hidden transform hover:scale-110 transition duration-300"
+          data-aos="fade-right" data-aos-delay="500">
+          <a href="https://jofiel15.github.io/uadeo/">
+            <img class="w-full h-60 object-cover" src="img/uadopag.JPG" alt="Project 2">
+            <div
+              class="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-r from-white to-blue-500 opacity-0 transition duration-300 ease-in-out group-hover:opacity-70">
+            </div>
+            <div class="p-4 flex flex-col items-center justify-between relative z-10">
+              <h3 id="landinguadeo" class="text-lg font-medium text-txt group-hover:text-gray-dark">Landing Page for UADEO
+                </h3>
+              <span class="text-sm font-bold text-black group-hover:text-indigo-500 dev">Developed with:</span>
+
+
+              <div class="flex flex-row mt-2">
+
+                <img class="w-10 h-10" src="img/html.png" alt="">
+
+                <img class="w-10 h-10 " src="img/css.png" alt="">
+
+                <img class="w-10 h-10 ml-2" src="img/js.png" alt="">
+
+
+                <img class="w-10 h-10 ml-2" src="img/tailwind.png" alt="">
+
+              </div>
+
+
+
+            </div>
+          </a>
+        </div>
+        
+        
+        
+        
+        
+        
+        
         <div
           class="group portfolio-item relative hover:shadow-lg shadow-md rounded-lg overflow-hidden transform hover:scale-110 transition duration-300 "
           data-aos="fade-left" data-aos-delay="600">
@@ -552,25 +571,25 @@
 
 
   <!-- Contact Section -->
-  <section class="bg-gray-200 py-40 mb-0 ">
+  <section id="contact" class=" bg-gray-900 md:py-60 p-12  xl:p-12 xl:py-40 2xl:py-60 " >
     <div class="container mx-auto px-4">
-      <h2 class="text-4xl font-bold mb-8 text-center">✉️ Get in Touch!</h2>
+      <h2 class=" text-white text-4xl font-bold mb-8 text-center">✉️ Contact me</h2>
       <div class="max-w-md mx-auto">
         <form action="https://fabform.io/f/xxxxx" method="post" class="space-y-4">
           <div>
-            <label for="name" class="block font-bold mb-2">Your Name</label>
+            <label for="name" class=" text-white block font-bold mb-2">Your Name</label>
             <input type="text" id="name" name="name"
               class="w-full border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500"
               placeholder="Enter your name">
           </div>
           <div>
-            <label for="email" class="block font-bold mb-2">Your Email</label>
+            <label for="email" class=" text-white block font-bold mb-2">Your Email</label>
             <input type="email" id="email" name="email"
               class="w-full border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500"
               placeholder="Enter your email">
           </div>
           <div>
-            <label for="message" class="block font-bold mb-2">Your Message</label>
+            <label for="message" class=" text-white block font-bold mb-2">Your Message</label>
             <textarea name="message" id="message" rows="4"
               class="w-full border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500"
               placeholder="Enter your message"></textarea>
@@ -578,16 +597,12 @@
           <button type="submit"
             class="bg-blue-600 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300">Send
             Message 🚀</button>
-        </form>
-        <p class="mt-4 text-center">Prefer email? Send me an email <a target=_blank"
-            href="https://veilmail.io/irish-geoff"
-            class="text-blue-600 font-bold hover:underline">https://veilmail.io/irish-geoff</a> instead!</p>
-      </div>
+        </form> </div>
     </div>
   </section>
 
 
-  <footer class="bg-black text-white mt-0 py-8" id="contact">
+  <footer class="bg-black text-white mt-0 py-8" >
     <div class="container mx-auto flex flex-col items-center justify-center">
       <h2 id="contacto" class="text-2xl font-bold mb-8" data-aos="">Contact</h2>
       <div class="flex space-x-6">
