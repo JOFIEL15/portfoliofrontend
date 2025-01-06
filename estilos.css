@@ -1,5 +1,5 @@
 .fondo{
-    background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.277)), url(img/1.jpeg);
+    background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.277)), url(img/1.webp);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -67,9 +67,9 @@ main{
 
 
 footer{
-    margin-top: 120px;
-    background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.637)), url(img/Captura.JPG);
+    background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.637)), url(img/1.webp);
     background-size: cover;
+    height: 190px;
     background-position: center;
     background-attachment: fixed;
     color: rgb(255 255 255);

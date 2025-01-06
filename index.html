@@ -26,9 +26,9 @@
 
 </head>
 
-<body>
+<body class="bg-white">
 
-  <header>
+  <header class="bg-gradient-to-r from-gray-800 to-gray-700">
     <nav class="fixed top-0 w-full z-10 bg-gray-800 shadow">
       <div class="container flex items-center justify-between p-4 mx-auto">
         <button id="hamburger" class="text-white md:hidden focus:outline-none">
@@ -37,17 +37,18 @@
           </svg>
         </button>
 
-        <div class="hidden md:flex items-center justify-center space-x-4 w-full">
-          <a id="nav-start" href="#start"
-            class="nav-link text-white border-b-2 border-transparent hover:border-white">Start</a>
-          <a id="nav-lenguajes" href="#languages"
-            class="nav-link text-white border-b-2 border-transparent hover:border-white">Skills</a>
-          <a id="nav-about" href="#about"
-            class="nav-link text-white border-b-2 border-transparent hover:border-white">About</a>
-          <a id="nav-projects" href="#projects"
-            class="nav-link text-white border-b-2 border-transparent hover:border-white">Projects</a>
+        <div class="hidden md:flex items-center justify-center space-x-4 w-full" data-aos="fade-down" data-aos-delay="30">
+          <a  href="#inicio"
+            class="nav-link text-white border-b-2 border-transparent hover:border-white">Inicio</a>
+          
+          <a id="nav-lenguajes" href="#skills"
+            class="nav-link text-white border-b-2 border-transparent hover:border-white">Habilidades</a>
+          <a id="nav-start" href="#about"
+            class="nav-link text-white border-b-2 border-transparent hover:border-white">Sobre mí</a>
+          <a id="nav-about" href="#projects"
+            class="nav-link text-white border-b-2 border-transparent hover:border-white">Proyectos</a>
           <a id="nav-contact" href="#contact"
-            class="nav-link text-white border-b-2 border-transparent hover:border-white">Contact</a>
+            class="nav-link text-white border-b-2 border-transparent hover:border-white">Contacto</a>
 </div>
         </div>
       </div>
@@ -58,10 +59,11 @@
       <!-- Menú hamburguesa -->
       <div id="mobile-menu" class=" md:hidden hidden">
         <div class="flex flex-col p-4 bg-gray-800">
-          <a id="nav-start" href="#start" class="text-white py-2">Start</a>
-          <a id="nav-lenguajes" href="#languages" class="text-white py-2">Skills</a>
-          <a id="nav-about" href="#about" class="text-white py-2">About</a>
-          <a id="nav-projects" href="#projects" class="text-white py-2">Projects</a>
+          
+          <a href="#inicio" class="text-white py-2">Inicio</a>
+          <a href="#skills" class="text-white py-2">Habilidades</a>
+          <a id="nav-start" href="#about" class="text-white py-2">Sobre mí</a>
+          <a id="nav-about" href="#projects" class="text-white py-2">Proyectos</a>
           <a id="nav-contact" href="#contact" class="text-white py-2">Contact</a>
 
           </div>
@@ -108,97 +110,49 @@
   
   <!-- Seccion hero -->
   <main>
-    <section data-aos="fade-up" data-aos-duration="1500">
-      <div class="w-full h-screen relative fondo" id="start">
-        <div class="w-full h-full xl:px-16 xs: ml-2 px-8 flex gap-4 justify-center items-center">
-          <div class="w-full">
-            <h4 id="hola-txt" class="sm:text-2xl xs:text-md text-white ">Hello, My name is Jofiel Ontiveros 👋
-
-              <h1 id="im-txt" class="mt-4 sm:text-4xl xs:text-3xl text-white">I'm
-              </h1>
-              <span class="typing  text-white"></span>
-
-
-
-              <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
-                referrerpolicy="no-referrer"></script>
-              <script>
-                var typed = new Typed('.typing', {
-                  strings: ['', 'Software engineer,', 'Frontend Developer,'],
-                  typeSpeed: 100,
-                  BackSpeed: 60,
-                  loop: true
-                })
-              </script>
-
-
-              <p id="frontend-txt" class="mt-4 sm:text-lg xs:text-md text-white">Experienced front-end Developer
-                with 2+
-                years of expertise in Html, CSS, JS, PHP, SQL, and other technologies.</p>
-
-              <div class="flex flex-wrap text-center justify-center mt-5 md:justify-start">
-                <button type="button"
-                  class=" mr-5 mt-10 text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
-                  data-aos="fade-left" data-aos-delay="400"><a href="cv.pdf" download="cv.pdf" id="cv">Download
-                    CV</a></button>
-
-                <button type="button"
-                  class=" mt-10 text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700 "
-                  data-aos="fade-left" data-aos-delay="400"><a href="cv.pdf" download="cv.pdf" id="cv">Download
-                    CV</a></button>
-
-
-              </div>
-
-              <div class="flex flex-wrap text-center justify-center md:justify-start mt-5">
-                <a data-tippy-content="My Linkedin"
-                  href="https://www.linkedin.com/in/jofiel-alfredo-ontiveros-rivera-48583022b/" target="_blank">
-                  <svg class=" mr-5 w-10 h-10 fill-current text-white transform hover:scale-110 transition duration-300"
-                    data-aos="fade-left" data-aos-delay="350" viewBox="0 0 24 24">
-                    <path
-                      d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.18c-.97 0-1.75-.79-1.75-1.76 0-.97.79-1.76 1.75-1.76s1.75.79 1.75 1.76c0 .97-.79 1.76-1.75 1.76zm13.5 11.18h-3v-5.39c0-1.28-.03-2.92-1.77-2.92-1.77 0-2.04 1.38-2.04 2.82v5.49h-3v-10h2.88v1.36h.04c.4-.76 1.38-1.56 2.84-1.56 3.03 0 3.59 1.99 3.59 4.58v5.62z" />
-                  </svg>
-                </a>
-
-                <a id="github" data-tippy-content="My Github" href="https://github.com/JOFIEL15" target="_blank">
-                  <svg
-                    class=" mr-2 w-10 h-10 fill-current text-white transform hover:scale-110 transition duration-300 "
-                    data-aos="fade-left" data-aos-delay="350" viewBox="0 0 24 24">
-                    <path
-                      d="M12 2c-5.52 0-10 4.48-10 10 0 4.42 2.87 8.17 6.84 9.5.5.09.68-.22.68-.48v-1.74c-2.78.61-3.36-1.19-3.36-1.19-.45-1.16-1.11-1.47-1.11-1.47-.91-.63.07-.62.07-.62 1.01.07 1.54 1.03 1.54 1.03.89 1.53 2.34 1.09 2.91.83.09-.64.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.95 0-1.09.39-1.98 1.02-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02.8-.22 1.66-.33 2.51-.34.85.01 1.71.12 2.51.34 1.9-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.63.7 1.02 1.59 1.02 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.86v2.76c0 .27.18.58.69.48 3.97-1.34 6.84-5.08 6.84-9.5 0-5.52-4.48-10-10-10z" />
-                  </svg>
-                </a>
-              </div>
-
-
-          </div>
-
-
-
-          <div class="">
-            <img class="md:size-96 size-72 rounded-full mr-96 img-hero" src="img/pp.png" alt="My Pic" />
+    <section data-aos="fade-up" data-aos-duration="1000">
+      <div class="w-full h-screen relative fondo" id="inicio">
+        <div class="w-full h-full xl:px-16 xs:ml-2 px-8 flex gap-4 justify-center items-center">
+          <div class="w-full text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-2 text-white" data-aos="fade-up" data-aos-delay="100">
+              Jofiel Alfredo Ontiveros Rivera
+            </h1>
+    
+            <div class="h-5 w-full mb-10">
+              <h2 class="text-xl md:text-2xl font-light text-white mb-2" data-aos="fade-up" data-aos-delay="200">
+                <span id="role" class="typewriter relative"></span>
+              </h2>
+            </div>
+    
+            <p class="text-lg font-medium mb-10 text-white" data-aos="fade-up" data-aos-delay="400">
+              🌐 Descubre mis proyectos y habilidades.
+            </p>
+  
+            <!-- Botón de descarga de CV -->
+            <a href="cv.pdf" download class="bg-gray-900 text-white text-lg font-semibold px-6 py-3 rounded-lg border-2 border-gray-400 hover:bg-gray-700 hover:border-gray-500 focus:outline-none transition duration-300 ease-in-out transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="600">
+              Descargar CV
+            </a>
           </div>
         </div>
       </div>
-
-      </div>
-
     </section>
-  </main>
+    </main>
+
+  
 
   <!-- Seccion Skills -->
-  <section class="text-gray-700 body-font py-20 border-b-4 " id="languages">
+  <section class="text-gray-700 body-font py-20 border-b-4  " id="skills">
     <br>
-    <div id="frameworks" class="flex justify-center mt-10 text-4xl font-bold text-black mx-auto" data-aos="fade-up"
+    <div id="frameworks" class="flex justify-center mt-10 text-4xl font-extrabold leading-tight text-black mx-auto" data-aos="fade-up"
       data-aos-delay="100">
-      Skills
+      Habilidades
     </div>
     <div class="container px-5 py-12 mx-auto">
       <div class="flex flex-wrap text-center justify-center">
         <div class="p-4 md:w-1/4 sm:w-1/2" data-aos="fade-up" data-aos-delay="100">
           <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
             <div class="flex justify-center">
-              <img src="img/html.png" class="w-32 h-32 mb-3 img-fixed-size">
+              <img src="img/html.svg" class="w-32 h-32 mb-3 img-fixed-size">
             </div>
           </div>
         </div>
@@ -206,7 +160,7 @@
         <div class="p-4 md:w-1/4 sm:w-1/2" data-aos="fade-up" data-aos-delay="200">
           <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
             <div class="flex justify-center">
-              <img src="img/css.png" class="w-32 h-32 mb-3 img-fixed-size">
+              <img src="img/css.svg" class="w-32 h-32 mb-3 img-fixed-size">
             </div>
           </div>
         </div>
@@ -214,7 +168,7 @@
         <div class="p-4 md:w-1/4 sm:w-1/2" data-aos="fade-up" data-aos-delay="300">
           <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
             <div class="flex justify-center">
-              <img src="img/js.png" class="w-32 h-32 mb-3 img-fixed-size">
+              <img src="img/js.svg" class="w-32 h-32 mb-3 img-fixed-size">
             </div>
           </div>
         </div>
@@ -222,7 +176,7 @@
         <div class="p-4 md:w-1/4 sm:w-1/2" data-aos="fade-up" data-aos-delay="400">
           <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
             <div class="flex justify-center">
-              <img src="img/php.png" class="w-32 h-32 mb-3 img-fixed-size">
+              <img src="img/php.svg" class="w-32 h-32 mb-3 img-fixed-size">
             </div>
           </div>
         </div>
@@ -233,7 +187,7 @@
           <div class="p-4 md:w-1/4 sm:w-1/2" data-aos="fade-up" data-aos-delay="500">
             <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
               <div class="flex justify-center">
-                <img src="img/c.png" class="w-32 h-32 mb-3 img-fixed-size">
+                <img src="img/c.svg" class="w-32 h-32 mb-3 img-fixed-size">
               </div>
             </div>
           </div>
@@ -241,7 +195,7 @@
           <div class="p-4 md:w-1/4 sm:w-1/2" data-aos="fade-up" data-aos-delay="600">
             <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
               <div class="flex justify-center">
-                <img src="img/python.png" class="w-32 h-32 mb-3 img-fixed-size">
+                <img src="img/python.svg" class="w-32 h-32 mb-3 img-fixed-size">
               </div>
             </div>
           </div>
@@ -249,7 +203,7 @@
           <div class="p-4 md:w-1/4 sm:w-1/2" data-aos="fade-up" data-aos-delay="700">
             <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
               <div class="flex justify-center">
-                <img src="img/bootstrap.png" class="w-32 h-32 mb-3 img-fixed-size">
+                <img src="img/bootstrap.svg" class="w-32 h-32 mb-3 img-fixed-size">
               </div>
             </div>
           </div>
@@ -257,14 +211,14 @@
           <div class="p-4 md:w-1/4 sm:w-1/2" data-aos="fade-up" data-aos-delay="800">
             <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
               <div class="flex justify-center">
-                <img src="img/tailwind.png" class="w-32 h-32 mb-3 img-fixed-size">
+                <img src="img/tailwind.svg" class="w-32 h-32 mb-3 img-fixed-size">
               </div>
             </div>
           </div>
           <div class="p-4 md:w-1/4 sm:w-1/2" data-aos="fade-up" data-aos-delay="900">
             <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
               <div class="flex justify-center">
-                <img src="img/git.png" class="w-32 h-32 mb-3 img-fixed-size">
+                <img src="img/git.svg" class="w-32 h-32 mb-3 img-fixed-size">
               </div>
             </div>
           </div>
@@ -272,369 +226,277 @@
           <div class="p-4 md:w-1/4 sm:w-1/2" data-aos="fade-up" data-aos-delay="1000">
             <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
               <div class="flex justify-center">
-                <img src="img/github.png" class="w-32 h-32 mb-3 img-fixed-size">
+                <img src="img/github.svg" class="w-32 h-32 mb-3 img-fixed-size">
+              </div>
+            </div>
+          </div>
+          
+          <div class="p-4 md:w-1/4 sm:w-1/2" data-aos="fade-up" data-aos-delay="1000">
+            <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
+              <div class="flex justify-center">
+                <img src="img/sql.svg" class="w-32 h-32 mb-3 img-fixed-size">
               </div>
             </div>
           </div>
         </div>
+        
       </div>
   </section>
 
-  <!-- Seccion about -->
   <section class="border-b-4 bg-gray-900 py-10 xl:py-20 2xl:py-60" id="about">
     <div class="container mx-auto px-6 md:px-16 lg:px-24 xl:px-32 mt-20 mb-40">
-      <h2 id="tituloabout"
-        class="text-center text-4xl font-bold text-white mb-6"
-        data-aos="fade-right" data-aos-delay="100">About Me</h2>
-      
-      <h3 id="webd" 
-        class="text-center text-2xl font-semibold text-white mb-4" 
-        data-aos="fade-right" data-aos-delay="200">
-        An Enthusiast Developer 💻
-      </h3>
-      
-      <p id="textoaboutme" 
-        class="text-lg leading-relaxed text-white md:text-justify" 
-        data-aos="fade-right" data-aos-delay="300">
-        Hello! I am a passionate software engineer with a solid background in application development and an insatiable
-        thirst to learn and grow in the world of technology. With a curious mind and a passion for solving problems, my
-        goal is to create innovative solutions that make life easier and more efficient for people.
-        <br><br>
-        My journey in programming began with an early fascination with computer science, and I have been immersed in the
-        world of software development ever since. I have experience in various technologies and programming languages,
-        from Java and Python to JavaScript and SQL. My focus is on creating clean and efficient code, as well as
-        designing scalable and robust architectures.
-        <br><br>
-        In addition to my technical ability, I consider myself an excellent communicator and an effective collaborator
-        in multidisciplinary teams. I enjoy working in dynamic environments where I can share ideas and learn from my
-        colleagues.
-        <br><br>
-        My current search focuses on challenging opportunities where I can apply my technical and creative skills to
-        contribute to the development of innovative solutions. I am excited by the possibility of being part of a
-        visionary team that shares my passion for technology and quality software development.
-        <br><br>
-        I hope to have the opportunity to work together and do great things!
-      </p>
+        <h2 id="tituloabout"
+            class="text-center text-4xl font-extrabold leading-tight text-white mb-6"
+            data-aos="fade-right" data-aos-delay="100">Sobre mi</h2>
+        
+        <h3 id="webd" 
+            class="text-center text-2xl font-semibold text-white mb-4" 
+            data-aos="fade-right" data-aos-delay="200">
+            Un Desarrollador entusiasta 💻
+        </h3>
+        
+        <div class="flex flex-col md:flex-row items-center justify-between">
+            <!-- Texto -->
+            <p id="textoaboutme" 
+                class="text-lg leading-relaxed text-white md:text-justify md:w-1/2"
+                data-aos="fade-right" data-aos-delay="300">
+                Soy un desarrollador apasionado con una amplia versatilidad que abarca tanto el diseño web como el desarrollo backend. Tengo experiencia sólida en la creación de interfaces web atractivas y funcionales utilizando tecnologías modernas como HTML, CSS, JavaScript y frameworks como Bootstrap y Tailwind. Mi enfoque se centra en crear experiencias de usuario fluidas y visualmente impactantes.
+
+                Además, cuento con una fuerte base en programación con Python, donde he trabajado en la creación de aplicaciones robustas y eficientes, así como en la automatización de procesos y análisis de datos. Mi habilidad para resolver problemas complejos y escribir código limpio y escalable me ha permitido desarrollar proyectos que resuelven necesidades reales.
+
+                En el ámbito del desarrollo de aplicaciones, también tengo experiencia trabajando con C#, desarrollando soluciones de software utilizando tecnologías .NET. Mi habilidad para integrar la lógica de negocio con una interfaz intuitiva y eficiente me permite crear aplicaciones completas que cumplen con las expectativas del usuario.
+
+                Siempre busco aprender nuevas tecnologías y metodologías para mejorar mis habilidades y aportar soluciones innovadoras a cada proyecto que emprendo. Mi pasión por el desarrollo me impulsa a explorar nuevos retos y mejorar continuamente mi enfoque tanto en el diseño como en el desarrollo backend.
+            </p>
+            
+            <!-- Imagen -->
+            <div class="mt-6 md:mt-0 md:w-1/3">
+                <img src="img/pp.jpg" alt="Imagen sobre mi" class="w-full h-auto rounded-lg shadow-lg" />
+            </div>
+        </div>
     </div>
-  </section>
+</section>
 
 
 
-  <!-- Seccion projects -->
-  <section id="projects" class="portfolio-section py-16 px-4 ">
-    <div class="container mx-auto  mt-20">
+  <!-- Sección de proyectos -->
+  <section id="projects" class="portfolio-section py-16 px-4">
+    <div class="container mx-auto mt-20">
       <div class="text-center mb-12">
-        <h2 id="portfolio" class="text-4xl font-bold mb-4 flex justify-center" data-aos="fade-right"
-          data-aos-delay="100">Portfolio Showcase</h2>
-        <p id="portfolio2" class="text-lg text-black font-semibold flex justify-center" data-aos="fade-left"
-          data-aos-delay="200">Discover my latest projects and success stories</p>
+        <h2 id="portfolio" class="text-4xl font-extrabold leading-tight mb-4 flex justify-center" data-aos="fade-right" data-aos-delay="100">
+          Mis proyectos
+        </h2>
+        <p id="portfolio2" class="text-lg text-black font-semibold flex justify-center" data-aos="fade-left" data-aos-delay="200">
+          Algunos de mis mas destacados proyectos
+        </p>
       </div>
-
+  
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-        <div
-          class="group portfolio-item relative hover:shadow-lg shadow-md rounded-lg overflow-hidden transform hover:scale-110 transition duration-300"
-          data-aos="fade-right" data-aos-delay="300">
+        <div class="group portfolio-item relative hover:shadow-lg shadow-md rounded-lg overflow-hidden transform hover:scale-110 transition duration-300" data-aos="fade-right" data-aos-delay="300">
           <a href="https://generadorconstanciasuadeo.000webhostapp.com/constancias.php">
-            <img class="w-full h-60 object-cover" src="img/proyecto1.JPG" alt="Project 1">
-            <div
-              class="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-r from-white to-blue-500 opacity-0 transition duration-300 ease-in-out group-hover:opacity-70">
-            </div>
+            <img class="w-full h-60 object-cover" src="img/proyecto1.webp" alt="Proyecto 1">
+            <div class="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-r from-white to-blue-500 opacity-0 transition duration-300 ease-in-out group-hover:opacity-70"></div>
             <div class="p-4 flex flex-col items-center justify-between relative z-10">
-              <h3 id="generador" class="text-lg font-medium text-txt group-hover:text-gray-dark"> Certificate generator
-                for my
-                university</h3>
-              <span class="text-sm font-bold text-black group-hover:text-indigo-500 dev">Developed with:</span>
+              <h3 id="generador" class="text-lg font-medium text-txt group-hover:text-gray-dark">
+                Generador de constancias para mi universidad
+              </h3>
+              <span class="text-sm font-bold text-black group-hover:text-indigo-500 dev">Desarrollado con:</span>
               <div class="flex flex-row mt-2">
-
-                <img class="w-10 h-10" src="img/html.png" alt="">
-
-                <img class="w-10 h-10 " src="img/css.png" alt="">
-
-                <img class="w-10 h-10 ml-2" src="img/js.png" alt="">
-
-                <img class="w-10 h-10 ml-2" src="img/php.png" alt="">
-
-                <img class="w-10 h-10 ml-2" src="img/tailwind.png" alt="">
-
+                <img class="w-10 h-10" src="img/html.svg" alt="">
+                <img class="w-10 h-10" src="img/css.svg" alt="">
+                <img class="w-10 h-10 ml-2" src="img/js.svg" alt="">
+                <img class="w-10 h-10 ml-2" src="img/php.svg" alt="">
+                <img class="w-10 h-10 ml-2" src="img/tailwind.svg" alt="">
               </div>
-
             </div>
           </a>
         </div>
-
-
-        <div
-          class="group portfolio-item relative hover:shadow-lg shadow-md rounded-lg overflow-hidden transform hover:scale-110 transition duration-300"
-          data-aos="fade-right" data-aos-delay="400">
+  
+        <div class="group portfolio-item relative hover:shadow-lg shadow-md rounded-lg overflow-hidden transform hover:scale-110 transition duration-300" data-aos="fade-right" data-aos-delay="400">
           <a href="https://jofiel15.github.io/cv-jofielontiveros">
-            <img class="w-full h-60 object-cover" src="img/cv.png" alt="Project 2">
-            <div
-              class="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-r from-white to-blue-500 opacity-0 transition duration-300 ease-in-out group-hover:opacity-70">
-            </div>
+            <img class="w-full h-60 object-cover" src="img/cv.webp" alt="Proyecto 2">
+            <div class="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-r from-white to-blue-500 opacity-0 transition duration-300 ease-in-out group-hover:opacity-70"></div>
             <div class="p-4 flex flex-col items-center justify-between relative z-10">
-              <h3 class="text-lg font-medium text-txt group-hover:text-gray-dark"> CV Jofiel Ontiveros</h3>
-              <span class="text-sm font-bold text-black group-hover:text-indigo-500 dev">Developed with:</span>
+              <h3 class="text-lg font-medium text-txt group-hover:text-gray-dark">
+                CV Jofiel Ontiveros
+              </h3>
+              <span class="text-sm font-bold text-black group-hover:text-indigo-500 dev">Desarrollado con:</span>
               <div class="flex flex-row mt-2">
-
-                <img class="w-10 h-10" src="img/html.png" alt="">
-
-                <img class="w-10 h-10 " src="img/css.png" alt="">
-
-
-
-                <img class="w-10 h-10 ml-2" src="img/tailwind.png" alt="">
-
+                <img class="w-10 h-10" src="img/html.svg" alt="">
+                <img class="w-10 h-10" src="img/css.svg" alt="">
+                <img class="w-10 h-10 ml-2" src="img/tailwind.svg" alt="">
               </div>
-
             </div>
           </a>
         </div>
-
-        <div
-          class="group portfolio-item relative hover:shadow-lg shadow-md rounded-lg overflow-hidden transform hover:scale-110 transition duration-300"
-          data-aos="fade-right" data-aos-delay="500">
+  
+        <div class="group portfolio-item relative hover:shadow-lg shadow-md rounded-lg overflow-hidden transform hover:scale-110 transition duration-300" data-aos="fade-right" data-aos-delay="100">
           <a href="https://bienesraicesduranh.com/">
-            <img class="w-full h-60 object-cover" src="img/proyecto2.JPG" alt="Project 2">
-            <div
-              class="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-r from-white to-blue-500 opacity-0 transition duration-300 ease-in-out group-hover:opacity-70">
-            </div>
+            <img class="w-full h-60 object-cover" src="img/proyecto2.webp" alt="Proyecto 3">
+            <div class="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-r from-white to-blue-500 opacity-0 transition duration-300 ease-in-out group-hover:opacity-70"></div>
             <div class="p-4 flex flex-col items-center justify-between relative z-10">
-              <h3 id="landing" class="text-lg font-medium text-txt group-hover:text-gray-dark">Landing Page for real
-                estate</h3>
-              <span class="text-sm font-bold text-black group-hover:text-indigo-500 dev">Developed with:</span>
-
-
+              <h3 id="landing" class="text-lg font-medium text-txt group-hover:text-gray-dark">
+                Landing Page para bienes raíces
+              </h3>
+              <span class="text-sm font-bold text-black group-hover:text-indigo-500 dev">Desarrollado con:</span>
               <div class="flex flex-row mt-2">
-
-                <img class="w-10 h-10" src="img/html.png" alt="">
-
-                <img class="w-10 h-10 " src="img/css.png" alt="">
-
-                <img class="w-10 h-10 ml-2" src="img/js.png" alt="">
-
-
-                <img class="w-10 h-10 ml-2" src="img/tailwind.png" alt="">
-
+                <img class="w-10 h-10" src="img/html.svg" alt="">
+                <img class="w-10 h-10" src="img/css.svg" alt="">
+                <img class="w-10 h-10 ml-2" src="img/js.svg" alt="">
+                <img class="w-10 h-10 ml-2" src="img/tailwind.svg" alt="">
               </div>
-
-
-
             </div>
           </a>
         </div>
-        <div
-          class="group portfolio-item relative hover:shadow-lg shadow-md rounded-lg overflow-hidden transform hover:scale-110 transition duration-300"
-          data-aos="fade-right" data-aos-delay="500">
+  
+        <div class="group portfolio-item relative hover:shadow-lg shadow-md rounded-lg overflow-hidden transform hover:scale-110 transition duration-300" data-aos="fade-right" data-aos-delay="200">
           <a href="https://jofiel15.github.io/uadeo/">
-            <img class="w-full h-60 object-cover" src="img/uadopag.JPG" alt="Project 2">
-            <div
-              class="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-r from-white to-blue-500 opacity-0 transition duration-300 ease-in-out group-hover:opacity-70">
-            </div>
+            <img class="w-full h-60 object-cover" src="img/uadopag.webp" alt="Proyecto 4">
+            <div class="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-r from-white to-blue-500 opacity-0 transition duration-300 ease-in-out group-hover:opacity-70"></div>
             <div class="p-4 flex flex-col items-center justify-between relative z-10">
-              <h3 id="landinguadeo" class="text-lg font-medium text-txt group-hover:text-gray-dark">Landing Page for UADEO
-                </h3>
-              <span class="text-sm font-bold text-black group-hover:text-indigo-500 dev">Developed with:</span>
-
-
+              <h3 id="landinguadeo" class="text-lg font-medium text-txt group-hover:text-gray-dark">
+                Landing Page para UADEO
+              </h3>
+              <span class="text-sm font-bold text-black group-hover:text-indigo-500 dev">Desarrollado con:</span>
               <div class="flex flex-row mt-2">
-
-                <img class="w-10 h-10" src="img/html.png" alt="">
-
-                <img class="w-10 h-10 " src="img/css.png" alt="">
-
-                <img class="w-10 h-10 ml-2" src="img/js.png" alt="">
-
-
-                <img class="w-10 h-10 ml-2" src="img/tailwind.png" alt="">
-
+                <img class="w-10 h-10" src="img/html.svg" alt="">
+                <img class="w-10 h-10" src="img/css.svg" alt="">
+                <img class="w-10 h-10 ml-2" src="img/js.svg" alt="">
+                <img class="w-10 h-10 ml-2" src="img/tailwind.svg" alt="">
               </div>
-
-
-
             </div>
           </a>
         </div>
-        
-        
-        
-        
-        
-        
-        
-        <div
-          class="group portfolio-item relative hover:shadow-lg shadow-md rounded-lg overflow-hidden transform hover:scale-110 transition duration-300 "
-          data-aos="fade-left" data-aos-delay="600">
+  
+        <div class="group portfolio-item relative hover:shadow-lg shadow-md rounded-lg overflow-hidden transform hover:scale-110 transition duration-300" data-aos="fade-left" data-aos-delay="300">
           <a href="https://github.com/JOFIEL15/signtransationjofielontiveros">
-            <img class="w-full h-60 object-cover" src="img/proyecto3.JPG" alt="Project 3">
-            <div
-              class="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-r from-white to-blue-500 opacity-0 transition duration-300 ease-in-out group-hover:opacity-70">
-            </div>
+            <img class="w-full h-60 object-cover" src="img/proyecto3.webp" alt="Proyecto 5">
+            <div class="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-r from-white to-blue-500 opacity-0 transition duration-300 ease-in-out group-hover:opacity-70"></div>
             <div class="p-4 flex flex-col items-center justify-between relative z-10">
-              <h3 id="sign" class="text-lg font-medium text-txt group-hover:text-gray-dark">Sign translation program
+              <h3 id="sign" class="text-lg font-medium text-txt group-hover:text-gray-dark">
+                Programa de traducción de lenguaje de señas
               </h3>
-              <span class="text-sm font-bold text-black group-hover:text-indigo-500 dev">Developed with:</span>
+              <span class="text-sm font-bold text-black group-hover:text-indigo-500 dev">Desarrollado con:</span>
               <div class="flex flex-row mt-2">
-
-                <img class="w-10 h-10 ml-2" src="img/python.png" alt="">
-
-                <img class="w-10 h-10 ml-2" src="img/tensor.png" alt="">
-
+                <img class="w-10 h-10 ml-2" src="img/python.svg" alt="">
+                <img class="w-10 h-10 ml-2" src="img/tensor.svg" alt="">
                 <img class="w-10 h-10 ml-2" src="img/media.png" alt="">
-
-                <img class="w-10 h-10 ml-2" src="img/open.png" alt="">
-
-
+                <img class="w-10 h-10 ml-2" src="img/open.svg" alt="">
               </div>
             </div>
           </a>
         </div>
-        <div
-          class="group portfolio-item relative hover:shadow-lg shadow-md rounded-lg overflow-hidden transform hover:scale-110 transition duration-300"
-          data-aos="fade-left" data-aos-delay="700">
+  
+        <div class="group portfolio-item relative hover:shadow-lg shadow-md rounded-lg overflow-hidden transform hover:scale-110 transition duration-300" data-aos="fade-left" data-aos-delay="400">
           <a href="https://jofiel15.github.io/caserita/index.html">
-            <img class="w-full h-60 object-cover" src="img/caserita.png" alt="Project 4">
-            <div
-              class="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-r from-white to-blue-500 opacity-0 transition duration-300 ease-in-out group-hover:opacity-70">
-            </div>
+            <img class="w-full h-60 object-cover" src="img/caserita.webp" alt="Proyecto 6">
+            <div class="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-r from-white to-blue-500 opacity-0 transition duration-300 ease-in-out group-hover:opacity-70"></div>
             <div class="p-4 flex flex-col items-center justify-between relative z-10">
-              <h3 id="caserita" class="text-lg font-medium text-txt group-hover:text-gray-dark"> Project Landing Page
+              <h3 id="caserita" class="text-lg font-medium text-txt group-hover:text-gray-dark">
+                Proyecto
+  
+   Landing Page
               </h3>
-              <span class="text-sm font-bold text-black group-hover:text-indigo-500 dev">Developed with:</span>
+              <span class="text-sm font-bold text-black group-hover:text-indigo-500 dev">Desarrollado con:</span>
               <div class="flex flex-row mt-2">
-
-                <img class="w-10 h-10" src="img/html.png" alt="">
-
-                <img class="w-10 h-10 " src="img/css.png" alt="">
-
-                <img class="w-10 h-10 ml-2" src="img/js.png" alt="">
-
-
+                <img class="w-10 h-10" src="img/html.svg" alt="">
+                <img class="w-10 h-10" src="img/css.svg" alt="">
+                <img class="w-10 h-10 ml-2" src="img/js.svg" alt="">
               </div>
             </div>
           </a>
         </div>
-
-        <div
-          class="group portfolio-item relative hover:shadow-lg shadow-md rounded-lg overflow-hidden transform hover:scale-110 transition duration-300 "
-          data-aos="fade-left" data-aos-delay="800">
+  
+        <div class="group portfolio-item relative hover:shadow-lg shadow-md rounded-lg overflow-hidden transform hover:scale-110 transition duration-300" data-aos="fade-left" data-aos-delay="100">
           <a href="https://github.com/JOFIEL15/sistemaconsultorio/releases">
-            <img class="w-full h-60 object-cover" src="img/proyecto4.JPG" alt="Project 5">
-            <div
-              class="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-r from-white to-blue-500 opacity-0 transition duration-300 ease-in-out group-hover:opacity-70">
-            </div>
+            <img class="w-full h-60 object-cover" src="img/proyecto4.webp" alt="Proyecto 7">
+            <div class="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-r from-white to-blue-500 opacity-0 transition duration-300 ease-in-out group-hover:opacity-70"></div>
             <div class="p-4 flex flex-col items-center justify-between relative z-10">
-              <h3 id="medical" class="text-lg font-medium text-txt group-hover:text-gray-dark"> Medical office system
+              <h3 id="medical" class="text-lg font-medium text-txt group-hover:text-gray-dark">
+                Sistema de consultorio médico
               </h3>
-              <span class="text-sm font-bold text-black group-hover:text-indigo-500 dev">Developed with:</span>
-
+              <span class="text-sm font-bold text-black group-hover:text-indigo-500 dev">Desarrollado con:</span>
               <div class="flex flex-row mt-2">
-
-
-
-                <img class="w-10 h-10 ml-2" src="img/c.png" alt="">
-
+                <img class="w-10 h-10 ml-2" src="img/c.svg" alt="">
+                <img class="w-10 h-10 ml-2" src="img/sql.svg" alt="">
               </div>
             </div>
           </a>
         </div>
-
-        <div
-          class="group portfolio-item relative hover:shadow-lg shadow-md rounded-lg overflow-hidden transform hover:scale-110 transition duration-300"
-          data-aos="fade-right" data-aos-delay="900">
+  
+        <div class="group portfolio-item relative hover:shadow-lg shadow-md rounded-lg overflow-hidden transform hover:scale-110 transition duration-300" data-aos="fade-right" data-aos-delay="200">
           <a href="https://jofiel15.github.io/autolavadoweb">
-            <img class="w-full h-60 object-cover" src="img/carwas.JPG" alt="Project 6">
-            <div
-              class="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-r from-white to-blue-500 opacity-0 transition duration-300 ease-in-out group-hover:opacity-70">
-            </div>
+            <img class="w-full h-60 object-cover" src="img/carwas.webp" alt="Proyecto 8">
+            <div class="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-r from-white to-blue-500 opacity-0 transition duration-300 ease-in-out group-hover:opacity-70"></div>
             <div class="p-4 flex flex-col items-center justify-between relative z-10">
-              <h3 id="carwash" class="text-lg font-medium text-txt group-hover:text-gray-dark"> Carwash Website</h3>
-              <span class="text-sm font-bold text-black group-hover:text-indigo-500 dev">Developed with:</span>
+              <h3 id="carwash" class="text-lg font-medium text-txt group-hover:text-gray-dark">
+                Página web de Autolavado
+              </h3>
+              <span class="text-sm font-bold text-black group-hover:text-indigo-500 dev">Desarrollado con:</span>
               <div class="flex flex-row mt-2">
-
-                <img class="w-10 h-10" src="img/html.png" alt="">
-
-                <img class="w-10 h-10 " src="img/css.png" alt="">
-
-                <img class="w-10 h-10 ml-2" src="img/js.png" alt="">
-
-
-                <img class="w-10 h-10 ml-2" src="img/bootstrap.png" alt="">
-
+                <img class="w-10 h-10" src="img/html.svg" alt="">
+                <img class="w-10 h-10" src="img/css.svg" alt="">
+                <img class="w-10 h-10 ml-2" src="img/js.svg" alt="">
+                <img class="w-10 h-10 ml-2" src="img/bootstrap.svg" alt="">
               </div>
             </div>
           </a>
         </div>
-
       </div>
     </div>
   </section>
 
+ 
 
   <!-- Contact Section -->
-  <section id="contact" class=" bg-gray-900 md:py-60 p-12  xl:p-12 xl:py-40 2xl:py-60 " >
+  <section id="contact" class=" bg-gray-900 md:py-40 p-12  xl:p-12 xl:py-20 2xl:py-60 " >
     <div class="container mx-auto px-4">
-      <h2 class=" text-white text-4xl font-bold mb-8 text-center">✉️ Contact me</h2>
+      <h2 class=" text-white text-4xl font-extrabold leading-tight mb-8 text-center">✉️ Contactame</h2>
       <div class="max-w-md mx-auto">
         <form action="https://fabform.io/f/xxxxx" method="post" class="space-y-4">
           <div>
-            <label for="name" class=" text-white block font-bold mb-2">Your Name</label>
+            <label for="name" class=" text-white block font-bold mb-2">Nombre</label>
             <input type="text" id="name" name="name"
               class="w-full border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500"
-              placeholder="Enter your name">
+              placeholder="Ingresa tu nombre">
           </div>
           <div>
-            <label for="email" class=" text-white block font-bold mb-2">Your Email</label>
+            <label for="email" class=" text-white block font-bold mb-2">Correo</label>
             <input type="email" id="email" name="email"
               class="w-full border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500"
-              placeholder="Enter your email">
+              placeholder="Ingresa tu correo electronico">
           </div>
           <div>
-            <label for="message" class=" text-white block font-bold mb-2">Your Message</label>
+            <label for="message" class=" text-white block font-bold mb-2">Tu mensaje</label>
             <textarea name="message" id="message" rows="4"
               class="w-full border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500"
-              placeholder="Enter your message"></textarea>
+              placeholder="Ingresa tu mensaje"></textarea>
           </div>
           <button type="submit"
-            class="bg-blue-600 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300">Send
-            Message 🚀</button>
+            class="bg-blue-600 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300">Enviar mensaje 🚀</button>
         </form> </div>
+        <div class="text-center mt-6">
+          <p class="text-lg font-semibold text-gray-300" data-aos="fade-up" data-aos-delay="800">También puedes contactarme en:</p>
+          <div class="flex justify-center space-x-4 mt-4" data-aos="fade-up" data-aos-delay="900">
+              <a href="https://github.com/JOFIEL15" target="_blank" class="text-gray-300 transition-transform transform hover:scale-110"><i class="fab fa-github fa-2x"></i></a>
+              <a href="https://mx.linkedin.com/in/jofiel-alfredo-ontiveros-rivera-48583022b" target="_blank" class="text-gray-300 transition-transform transform hover:scale-110"><i class="fab fa-linkedin fa-2x"></i></a>
+              <a href="https://wa.me/526951144874" target="_blank" class="text-gray-300 transition-transform transform hover:scale-110"><i class="fab fa-whatsapp fa-2x"></i></a>
+              
+            </div>
+      </div>
+  </section>
     </div>
   </section>
 
 
   <footer class="bg-black text-white mt-0 py-8" >
-    <div class="container mx-auto flex flex-col items-center justify-center">
-      <h2 id="contacto" class="text-2xl font-bold mb-8" data-aos="">Contact</h2>
-      <div class="flex space-x-6">
-        <a data-tippy-content="My Linkedin"
-          href="https://www.linkedin.com/in/jofiel-alfredo-ontiveros-rivera-48583022b/" target="_blank">
-          <svg class="w-10 h-10 fill-current text-white transform hover:scale-110 transition duration-300"
-            viewBox="0 0 24 24">
-            <path
-              d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.18c-.97 0-1.75-.79-1.75-1.76 0-.97.79-1.76 1.75-1.76s1.75.79 1.75 1.76c0 .97-.79 1.76-1.75 1.76zm13.5 11.18h-3v-5.39c0-1.28-.03-2.92-1.77-2.92-1.77 0-2.04 1.38-2.04 2.82v5.49h-3v-10h2.88v1.36h.04c.4-.76 1.38-1.56 2.84-1.56 3.03 0 3.59 1.99 3.59 4.58v5.62z" />
-          </svg>
-        </a>
-        <a data-tippy-content="My Email" href="mailto:jofiel.ontiveros.jo@gmail.com">
-          <svg class="w-10 h-10 fill-current text-white transform hover:scale-110 transition duration-300"
-            viewBox="0 0 24 24">
-            <path
-              d="M12 13.5c-.48 0-.91-.2-1.24-.52l-10.64-8.98 22.36-.01-10.65 8.99c-.32.32-.75.52-1.23.52zm12-8.5v13c0 1.1-.9 2-2 2h-20c-1.1 0-2-.9-2-2v-13c0-1.1.9-2 2-2h20c1.1 0 2 .9 2 2zm-22 0v1.23l10 8.45 10-8.44v-1.24h-20z" />
-          </svg>
-        </a>
-        <a id="github" data-tippy-content="My Github" href="https://github.com/JOFIEL15" target="_blank">
-          <svg class="w-10 h-10 fill-current text-white transform hover:scale-110 transition duration-300 "
-            viewBox="0 0 24 24">
-            <path
-              d="M12 2c-5.52 0-10 4.48-10 10 0 4.42 2.87 8.17 6.84 9.5.5.09.68-.22.68-.48v-1.74c-2.78.61-3.36-1.19-3.36-1.19-.45-1.16-1.11-1.47-1.11-1.47-.91-.63.07-.62.07-.62 1.01.07 1.54 1.03 1.54 1.03.89 1.53 2.34 1.09 2.91.83.09-.64.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.95 0-1.09.39-1.98 1.02-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02.8-.22 1.66-.33 2.51-.34.85.01 1.71.12 2.51.34 1.9-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.63.7 1.02 1.59 1.02 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.86v2.76c0 .27.18.58.69.48 3.97-1.34 6.84-5.08 6.84-9.5 0-5.52-4.48-10-10-10z" />
-          </svg>
-        </a>
-      </div>
-    </div>
+    
   </footer>
 
 
 
   <script src="script.js"></script>
+ <script src="escritura.js"></script>
   <script>
     AOS.init();
   </script>
