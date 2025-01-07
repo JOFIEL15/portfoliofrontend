@@ -11,8 +11,11 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
-  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 
 
 
@@ -290,15 +293,111 @@
           Algunos de mis mas destacados proyectos
         </p>
       </div>
+
+
   
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-        <div class="group portfolio-item relative hover:shadow-lg shadow-md rounded-lg overflow-hidden transform hover:scale-110 transition duration-300" data-aos="fade-right" data-aos-delay="300">
-          <a href="https://generadorconstanciasuadeo.000webhostapp.com/constancias.php">
-            <img class="w-full h-60 object-cover" src="img/proyecto1.webp" alt="Proyecto 1">
+     
+        <div class="group portfolio-item relative hover:shadow-lg shadow-md rounded-lg overflow-hidden transform hover:scale-110 transition duration-300" data-aos="fade-right" data-aos-delay="200">
+          <a href="">
+            <!-- Contenedor del carrusel con Swiper -->
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <!-- Slides del carrusel -->
+                <div class="swiper-slide">
+                  <img class="w-full h-60 object-cover" src="img/bollente.webp" alt="Proyecto 1">
+                </div>
+                <div class="swiper-slide">
+                  <img class="w-full h-60 object-cover" src="img/bollente2.webp" alt="Proyecto 1 - Imagen 2">
+                </div>
+                <div class="swiper-slide">
+                  <img class="w-full h-60 object-cover" src="img/bollente3.webp" alt="Proyecto 1 - Imagen 3">
+                </div>
+                
+                <div class="swiper-slide">
+                  <img class="w-full h-60 object-cover" src="img/bollente4.webp" alt="Proyecto 1 - Imagen 4">
+                </div>
+              
+              </div>
+            </div>
+        
             <div class="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-r from-white to-blue-500 opacity-0 transition duration-300 ease-in-out group-hover:opacity-70"></div>
             <div class="p-4 flex flex-col items-center justify-between relative z-10">
-              <h3 id="generador" class="text-lg font-medium text-txt group-hover:text-gray-dark">
-                Generador de constancias para mi universidad
+              <h3 id="" class="text-lg font-medium text-txt group-hover:text-gray-dark">
+                Liga deportiva con clasificación de equipos
+              </h3>
+              <span class="text-sm font-bold text-black group-hover:text-indigo-500 dev">Desarrollado con:</span>
+              <div class="flex flex-row mt-2">
+                <img class="w-10 h-10" src="img/html.svg" alt="">
+                <img class="w-10 h-10" src="img/css.svg" alt="">
+                <img class="w-10 h-10 ml-2" src="img/js.svg" alt="">
+                <img class="w-10 h-10 ml-2" src="img/php.svg" alt="">
+                <img class="w-10 h-10 ml-2" src="img/bootstrap.svg" alt="">
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        
+        <div class="group portfolio-item relative hover:shadow-lg shadow-md rounded-lg overflow-hidden transform hover:scale-110 transition duration-300" data-aos="fade-right" data-aos-delay="200">
+          <a href="">
+            <!-- Contenedor del carrusel con Swiper -->
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <!-- Slides del carrusel -->
+                <div class="swiper-slide">
+                  <img class="w-full h-60 object-cover" src="img/receta.webp" alt="Proyecto 2">
+                </div>
+                <div class="swiper-slide">
+                  <img class="w-full h-60 object-cover" src="img/receta2.webp" alt="Proyecto 2 - Imagen 2">
+                </div>
+                
+                <div class="swiper-slide">
+                  <img class="w-full h-60 object-cover" src="img/receta3.webp" alt="Proyecto 2 - Imagen 3">
+                </div>
+              </div>
+            </div>
+        
+            <div class="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-r from-white to-blue-500 opacity-0 transition duration-300 ease-in-out group-hover:opacity-70"></div>
+            <div class="p-4 flex flex-col items-center justify-between relative z-10">
+              <h3 id="" class="text-lg font-medium text-txt group-hover:text-gray-dark">
+                Generador de recetas medicas para consultorio privado
+              </h3>
+              <span class="text-sm font-bold text-black group-hover:text-indigo-500 dev">Desarrollado con:</span>
+              <div class="flex flex-row mt-2">
+                <img class="w-10 h-10" src="img/html.svg" alt="">
+                <img class="w-10 h-10" src="img/css.svg" alt="">
+                <img class="w-10 h-10 ml-2" src="img/js.svg" alt="">
+                <img class="w-10 h-10 ml-2" src="img/php.svg" alt="">
+                <img class="w-10 h-10 ml-2" src="img/tailwind.svg" alt="">
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="group portfolio-item relative hover:shadow-lg shadow-md rounded-lg overflow-hidden transform hover:scale-110 transition duration-300" data-aos="fade-right" data-aos-delay="200">
+          <a href="https://generadorconstanciasuadeo.000webhostapp.com/constancias.php">
+            <!-- Contenedor del carrusel con Swiper -->
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <!-- Slides del carrusel -->
+                <div class="swiper-slide">
+                  <img class="w-full h-60 object-cover" src="img/cons.webp" alt="Proyecto 3">
+                </div>
+                <div class="swiper-slide">
+                  <img class="w-full h-60 object-cover" src="img/cons2.webp" alt="Proyecto 3 - Imagen 2">
+                </div>
+                
+                <div class="swiper-slide">
+                  <img class="w-full h-60 object-cover" src="img/cons3.webp" alt="Proyecto 3 - Imagen 3">
+                </div>
+              </div>
+            </div>
+        
+            <div class="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-r from-white to-blue-500 opacity-0 transition duration-300 ease-in-out group-hover:opacity-70"></div>
+            <div class="p-4 flex flex-col items-center justify-between relative z-10">
+              <h3 id="" class="text-lg font-medium text-txt group-hover:text-gray-dark">
+                Generador de constancias para UADEO
               </h3>
               <span class="text-sm font-bold text-black group-hover:text-indigo-500 dev">Desarrollado con:</span>
               <div class="flex flex-row mt-2">
