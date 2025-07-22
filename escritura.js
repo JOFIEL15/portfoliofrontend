@@ -7,7 +7,7 @@ AOS.init({
 
 
 const roleElement = document.getElementById("role");
-const roles = ["Desarrollador Web", "Ingeniero de Software","Tengo 21 años de edad","Me gusta crear soluciones tecnologícas"];
+const roles = ["Ingeniero de Software","Tengo 21 años de edad","Me gusta crear soluciones tecnologícas"];
 let currentIndex = 0;
 let currentRole = "";
 let charIndex = 0;
